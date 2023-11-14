@@ -22,10 +22,12 @@ function Header() {
           </div>
         </div>
         <div className="header__upload">
-          <img src={upload} alt="upload" />
-        </div>
-        <div>
-          <button>UPLOAD</button>
+          <div className="header__upload__logo">
+            <img src={upload} alt="upload" />
+          </div>
+          <div className="header__upload__container">
+            <button className="header__upload__container__btn">UPLOAD</button>
+          </div>
         </div>
       </nav>
     </header>

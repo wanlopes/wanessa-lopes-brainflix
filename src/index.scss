@@ -6,12 +6,24 @@
 
 .header {
   &__logo {
+    height: 25px;
     display: flex;
   }
   &__ctn {
     display: flex;
     &__avatar {
       display: flex;
+    }
+  }
+  &__upload {
+    &__container {
+        &__btn {
+            background-color: $brainflix-blue;
+            border-radius: 4px;
+            font-family: $primary-bold;
+            color: $white;
+            border: none
+        }
     }
   }
 }
@@ -28,6 +40,7 @@
 //Mobile
 @media (max-width: $mobile-screen-min-size) {
   .header__logo {
+    padding: $headline-padding-after-mobile 0;
     flex-direction: row;
     justify-content: center;
   }
@@ -41,6 +54,13 @@
     border-radius: 50%;
     object-fit: cover;
 
+  }
+  .header__upload__container{
+    display: flex;
+    justify-content: center;
+  }
+  .header__upload__container__btn {
+    padding: 15px 110px;
   }
 }
 

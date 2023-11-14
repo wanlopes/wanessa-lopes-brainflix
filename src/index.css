@@ -21,6 +21,7 @@
 }
 
 .header__logo {
+  height: 25px;
   display: flex;
 }
 .header__ctn {
@@ -28,6 +29,13 @@
 }
 .header__ctn__avatar {
   display: flex;
+}
+.header__upload__container__btn {
+  background-color: #0095FF;
+  border-radius: 4px;
+  font-family: "Avenir Next Bold";
+  color: #ffffff;
+  border: none;
 }
 
 .main__container__title {
@@ -37,6 +45,7 @@
 
 @media (max-width: 320px) {
   .header__logo {
+    padding: 16px 0;
     flex-direction: row;
     justify-content: center;
   }
@@ -50,5 +59,12 @@
     border-radius: 50%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .header__upload__container {
+    display: flex;
+    justify-content: center;
+  }
+  .header__upload__container__btn {
+    padding: 15px 110px;
   }
 }/*# sourceMappingURL=index.css.map */
