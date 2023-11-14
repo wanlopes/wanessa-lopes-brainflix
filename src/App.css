@@ -20,6 +20,13 @@
   padding: 0;
 }
 
+.header {
+  display: flex;
+}
+.header__logo {
+  display: flex;
+}
+
 .main__container__title {
   font-family: "Avenir Next Bold";
   color: #323232;

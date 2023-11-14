@@ -1,20 +1,25 @@
 import logo from "../assets/Logo/BrainFlix-logo.svg";
 import upload from "../assets/Icons/upload.svg";
 import search from "../assets/Icons/search.svg";
+import avatar from "../assets/Images/Mohan-muruge.jpg";
 
 function Header() {
   return (
     <header>
-      <nav>
+      <nav className="header">
         <div className="header__logo">
           <img src={logo} alt="logo" />
         </div>
-        <div>{/* <img></img> */}</div>
-        <div>
-          <img src={search} alt="search"></img>
-        </div>
-        <div>
-          <input></input>
+        <div className="header__ctn">
+          <div className="header__ctn__icon">
+            <img src={search} alt="search"></img>
+          </div>
+          <div className="header__ctn__input">
+            <input></input>
+          </div>
+          <div className="header__ctn__avatar">
+            <img className="header__ctn__avatar__image" src={avatar} alt="" />
+          </div>
         </div>
         <div className="header__upload">
           <img src={upload} alt="upload" />

@@ -3,16 +3,46 @@
   margin: 0;
   padding: 0;
 }
+
+.header {
+  &__logo {
+    display: flex;
+  }
+  &__ctn {
+    display: flex;
+    &__avatar {
+      display: flex;
+    }
+  }
+}
+
 .main {
   &__container {
     &__title {
-      font-family: $primary-bold;
+      font-family: $primary-normal;
       color: $brainflix-black;
     }
   }
 }
 
 //Mobile
+@media (max-width: $mobile-screen-min-size) {
+  .header__logo {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .header__ctn__input {
+    height: 36px;
+    border: 4px;
+  }
+  .header__ctn__avatar__image {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+
+  }
+}
 
 //Mobile
 
