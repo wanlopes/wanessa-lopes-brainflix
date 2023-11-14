@@ -4,13 +4,14 @@ import likes from "../assets/Icons/likes.svg";
 import Fullscreen from "../assets/Icons/fullscreen.svg";
 import Play from "../assets/Icons/play.svg";
 
+
 function Main() {
   return (
-    <section>
-      <div>
-        <img src={Fullscreen} alt="fullscreen"></img>
+    <section className="main">
+      <div className="main__container">
+        <img src={Fullscreen} alt=""></img>
         <img src={Play} alt="play"></img>
-        <h1>BMX Rampage: 2021 Highlights</h1>
+        <h1 className="main__container__title">BMX Rampage: 2021 Highlights</h1>
       </div>
       <div>
         <p>By Red Crow</p>
@@ -32,7 +33,7 @@ function Main() {
         </p>
       </div>
       <div>
-        <img />
+        <img alt="" />
       </div>
       <div>
         <button>COMMENT</button>
