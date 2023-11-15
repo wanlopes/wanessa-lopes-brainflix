@@ -30,11 +30,71 @@
 
 .main {
   &__container {
-    &__title {
+    &__header {
+      &__title { 
       font-family: $primary-normal;
       color: $brainflix-black;
+      } 
     }
   }
+  &__info {
+    &__by {
+        font-family: $primary-normal;
+        color: $brainflix-black;
+    }
+    &__box {
+        display: flex;
+        &__viewrs {
+            font-family: $primary-normal;
+            color: $silver;
+        }
+    }
+    &__time {
+        font-family: $primary-normal;
+        color: $silver;
+    }
+    &__duo {
+        display: flex;
+        &__likers {
+        font-family: $primary-normal;
+        color: $silver;
+    }
+    }
+  }
+  &__text {
+    &__paragraph {
+        font-family: $primary-normal;
+        color: $brainflix-black;
+    }
+    &__comm {
+        font-family: $primary-bold;
+    }
+  }
+  &__section {
+    &__div {
+        &__title {
+            font-family: $primary-normal;
+            color: $silver;
+        }
+    }
+    &__btn {
+        &__comment {
+            background-color: $brainflix-blue;
+            border-radius: 4px;
+            font-family: $primary-bold;
+            color: $white;
+            border: none
+        }
+    }
+  }
+}
+.gallery {
+    &__header {
+        &__title {
+            font-family: $primary-normal;
+            color: $silver;
+        }
+    }
 }
 
 //Mobile
@@ -62,8 +122,30 @@
   .header__upload__container__btn {
     padding: 15px 110px;
   }
+  .main__container__header {
+    padding: 0px 16px 24px 16px;
+    border-bottom: 2px $mercury solid;
+  }
+  .main__text__paragraph {
+    padding: $headline-padding-between-components-mobile;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .main__text__comm {
+    font-size: 15px;
+    padding: 0 $headline-padding-between-components-mobile;
+  }
+  .main__section__div__title {
+    font-size: 16px;
+  }
+  .main__section__btn__comment {
+    padding: 13px 90px;
+  }
+  .gallery__header__title {
+    padding: $headline-padding-before-mobile $headline-padding-after-mobile;
+  }
 }
 
-//Mobile
+//Tablet
 
 //Desktop

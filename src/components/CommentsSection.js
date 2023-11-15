@@ -2,7 +2,7 @@ function CommentsSection () {
     return (
         <article>
             <div>
-                <img/>
+                <img alt=""/>
             </div>
             <div>
                 <h2>Join the Conversation</h2>

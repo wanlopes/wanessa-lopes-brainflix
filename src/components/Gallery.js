@@ -1,8 +1,8 @@
 function Gallery() {
   return (
-    <aside>
-      <div>
-        <h3>Next Videos</h3>
+    <aside className="gallery">
+      <div className="gallery__header">
+        <h3 className="gallery__header__title">Next Videos</h3>
       </div>
       <div>
         <div>
