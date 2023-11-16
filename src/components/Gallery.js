@@ -3,7 +3,7 @@ function Gallery() {
     <aside className="gallery">
       <div className="gallery__header">
         <h3 className="gallery__header__title">Next Videos</h3>
-      </div>
+      </div> 
       <div>
         <div>
           <video></video>

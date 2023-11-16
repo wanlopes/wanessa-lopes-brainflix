@@ -180,4 +180,47 @@
   .header__logo {
     padding: 26px 34px;
   }
+  input {
+    font-family: "Avenir Next";
+    color: #323232;
+    font-size: 12px;
+    width: 190px;
+    height: 30px;
+  }
+  .header__upload__container__btn {
+    font-size: 12px;
+    height: 36px;
+    width: 150px;
+  }
+  .header__ctn__avatar__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .header__logo {
+    padding: 30px 110px;
+  }
+  input {
+    font-family: "Avenir Next";
+    color: #323232;
+    font-size: 12px;
+    width: 230px;
+    height: 38px;
+  }
+  .header__upload__container__btn {
+    font-size: 12px;
+    height: 40px;
+    width: 165px;
+  }
+  .header__ctn__avatar__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
 }/*# sourceMappingURL=index.css.map */

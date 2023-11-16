@@ -15,18 +15,20 @@ function Header() {
             <img src={search} alt="search"></img>
           </div>
           <div className="header__ctn__input">
-            <input></input>
+            <input type="text" placeholder="Search"></input>
           </div>
           <div className="header__ctn__avatar">
             <img className="header__ctn__avatar__image" src={avatar} alt="" />
           </div>
         </div>
         <div className="header__upload">
-          <div className="header__upload__logo">
-            <img src={upload} alt="upload" />
-          </div>
           <div className="header__upload__container">
-            <button className="header__upload__container__btn">UPLOAD</button>
+            <button className="header__upload__container__btn">
+              <div className="header__upload__container__btn__logo">
+                <img src={upload} alt="upload" />
+              </div>
+              UPLOAD
+            </button>
           </div>
         </div>
       </nav>
