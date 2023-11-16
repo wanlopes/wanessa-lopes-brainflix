@@ -17,13 +17,13 @@
   }
   &__upload {
     &__container {
-        &__btn {
-            background-color: $brainflix-blue;
-            border-radius: 4px;
-            font-family: $primary-bold;
-            color: $white;
-            border: none
-        }
+      &__btn {
+        background-color: $brainflix-blue;
+        border-radius: 4px;
+        font-family: $primary-bold;
+        color: $white;
+        border: none;
+      }
     }
   }
 }
@@ -31,72 +31,96 @@
 .main {
   &__container {
     &__header {
-      &__title { 
-      font-family: $primary-normal;
-      color: $brainflix-black;
-      } 
+      &__title {
+        font-family: $primary-normal;
+        color: $brainflix-black;
+      }
     }
   }
   &__info {
     &__by {
-        font-family: $primary-normal;
-        color: $brainflix-black;
+      font-family: $primary-normal;
+      color: $brainflix-black;
     }
     &__box {
-        display: flex;
-        &__viewrs {
-            font-family: $primary-normal;
-            color: $silver;
-        }
+      display: flex;
+      &__viewrs {
+        font-family: $primary-normal;
+        color: $silver;
+      }
     }
     &__time {
-        font-family: $primary-normal;
-        color: $silver;
+      font-family: $primary-normal;
+      color: $silver;
     }
     &__duo {
-        display: flex;
-        &__likers {
+      display: flex;
+      &__likers {
         font-family: $primary-normal;
         color: $silver;
-    }
+      }
     }
   }
   &__text {
     &__paragraph {
-        font-family: $primary-normal;
-        color: $brainflix-black;
+      font-family: $primary-normal;
+      color: $brainflix-black;
     }
     &__comm {
-        font-family: $primary-bold;
+      font-family: $primary-bold;
     }
   }
   &__section {
     &__div {
-        &__title {
-            font-family: $primary-normal;
-            color: $silver;
-        }
+      &__title {
+        font-family: $primary-normal;
+        color: $silver;
+      }
     }
     &__btn {
-        &__comment {
-            background-color: $brainflix-blue;
-            border-radius: 4px;
-            font-family: $primary-bold;
-            color: $white;
-            border: none
-        }
+      display: flex;
+      padding-top: 16px;
+      padding-bottom: $headline-padding-after-mobile;
+      border-bottom: 2px solid $mercury;
+      &__comment {
+        background-color: $brainflix-blue;
+        border-radius: 4px;
+        font-family: $primary-bold;
+        color: $white;
+        border: none;
+      }
     }
   }
 }
 .gallery {
-    &__header {
-        &__title {
-            font-family: $primary-normal;
-            color: $silver;
-        }
+  &__header {
+    &__title {
+      font-family: $primary-normal;
+      color: $silver;
     }
+  }
 }
-
+.comments {
+  &__division {
+    border-bottom: 2px solid $mercury;
+    &__placeholder {
+      background-color: $mercury;
+      border-radius: 50%;
+    }
+    &__name {
+      font-family: $primary-normal;
+      color: $brainflix-black;
+    }
+    &__timestamp {
+      font-family: $primary-normal;
+      color: $silver;
+    }
+    &__text {
+      font-family: $primary-normal;
+      color: $brainflix-black;
+    }
+  }
+}
 //Mobile
 @media (max-width: $mobile-screen-min-size) {
   .header__logo {
@@ -113,9 +137,8 @@
     height: 36px;
     border-radius: 50%;
     object-fit: cover;
-
   }
-  .header__upload__container{
+  .header__upload__container {
     display: flex;
     justify-content: center;
   }
@@ -137,6 +160,11 @@
   }
   .main__section__div__title {
     font-size: 16px;
+    padding: 16px 16px;
+  }
+  .main__section__btn {
+    flex-direction: row;
+    justify-content: center;
   }
   .main__section__btn__comment {
     padding: 13px 90px;
@@ -144,8 +172,24 @@
   .gallery__header__title {
     padding: $headline-padding-before-mobile $headline-padding-after-mobile;
   }
+  .comments {
+    padding: $headline-padding-after-mobile $headline-padding-after-mobile;
+  }
+  .comments__division {
+    padding: $headline-padding-after-mobile 0px $headline-padding-after-mobile
+      0px;
+  }
+  .comments__division__placeholder {
+    height: 36px;
+    width: 36px;
+  }
 }
 
 //Tablet
+@media (min-width: 768px) and (max-width: $tablet-screen-max-size) {
+  .header__logo {
+    padding: 26px 34px;
+  }
+}
 
 //Desktop
