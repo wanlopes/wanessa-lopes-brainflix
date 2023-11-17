@@ -1,9 +1,24 @@
+import VideoSumary from "./VideoSumary";
+import videosData from "../Data/videos.json";
+
 function Gallery() {
+  const videos = [...videosData];
+
   return (
     <aside className="gallery">
+      <section>
+        {videos.map((props) => (
+          <VideoSumary
+            id={props.id}
+            title={props.title}
+            channel={props.channel}
+            image={props.image}
+          />
+        ))}
+      </section>
       <div className="gallery__header">
         <h3 className="gallery__header__title">Next Videos</h3>
-      </div> 
+      </div>
       <div>
         <div>
           <video></video>
