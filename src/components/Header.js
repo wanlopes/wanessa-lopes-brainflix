@@ -17,8 +17,12 @@ function Header() {
                 <img src={search} alt="search"></img>
               </div>
               <div className="nav__header__ctn__elements__input">
-                <input type="text" placeholder="Search"></input>
-              </div> 
+                <input
+                  className="nav__header__ctn__elements__input__field"
+                  type="text"
+                  placeholder="Search"
+                ></input>
+              </div>
               <div className="nav__header__ctn__elements__avatar">
                 <img
                   className="nav__header__ctn__elements__avatar__image"

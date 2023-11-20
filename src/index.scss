@@ -229,7 +229,7 @@
     flex-direction: row;
   }
   .nav__header__ctn {
-    padding-top: 26px;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -240,7 +240,7 @@
     font-family: $primary-normal;
     color: $brainflix-black;
     font-size: 12px;
-    padding: 12px 16px;
+    padding: 10px 16px;
     width: 190px;
   }
   .nav__header__ctn__upload__btn {
@@ -293,6 +293,9 @@
     font-size: 12px;
     height: 40px;
     width: 165px;
+  }
+  .nav__header__ctn__elements { 
+    align-items: center;
   }
   .nav__header__ctn__elements__avatar__image {
     width: 40px;
