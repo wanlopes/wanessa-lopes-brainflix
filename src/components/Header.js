@@ -6,29 +6,35 @@ import avatar from "../assets/Images/Mohan-muruge.jpg";
 function Header() {
   return (
     <header>
-      <nav className="header">
-        <div className="header__logo">
-          <img src={logo} alt="logo" />
-        </div>
-        <div className="header__ctn">
-          <div className="header__ctn__icon">
-            <img src={search} alt="search"></img>
+      <nav className="nav">
+        <div className="nav__header">
+          <div className="nav__header__logo">
+            <img src={logo} alt="logo" />
           </div>
-          <div className="header__ctn__input">
-            <input type="text" placeholder="Search"></input>
-          </div>
-          <div className="header__ctn__avatar">
-            <img className="header__ctn__avatar__image" src={avatar} alt="" />
-          </div>
-        </div>
-        <div className="header__upload">
-          <div className="header__upload__container">
-            <button className="header__upload__container__btn">
-              <div className="header__upload__container__btn__logo">
-                <img src={upload} alt="upload" />
+          <div className="nav__header__ctn">
+            <div className="nav__header__ctn__elements">
+              <div className="nav__header__ctn__elements__icon">
+                <img src={search} alt="search"></img>
               </div>
-              UPLOAD
-            </button>
+              <div className="nav__header__ctn__elements__input">
+                <input type="text" placeholder="Search"></input>
+              </div> 
+              <div className="nav__header__ctn__elements__avatar">
+                <img
+                  className="nav__header__ctn__elements__avatar__image"
+                  src={avatar}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="nav__header__ctn__upload">
+              <button className="nav__header__ctn__upload__btn">
+                <div className="nav__header__ctn__upload__btn__logo">
+                  <img src={upload} alt="upload" />
+                </div>
+                UPLOAD
+              </button>
+            </div>
           </div>
         </div>
       </nav>
