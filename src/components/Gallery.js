@@ -2,7 +2,7 @@ import VideoSumary from "./VideoSumary";
 import videosData from "../Data/videos.json";
 
 function Gallery() {
-  const videos = [...videosData];
+  const videos = videosData;
 
   return (
     <aside className="gallery">

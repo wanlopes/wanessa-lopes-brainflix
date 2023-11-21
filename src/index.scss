@@ -6,17 +6,30 @@
 
 .nav {
   display: flex;
+  width: 100%;
   &__header {
+    width: 100%;
     display: flex;
     &__logo {
       height: 25px;
       display: flex;
     }
     &__ctn {
+      width: 100%;
       display: flex;
       &__elements {
         display: flex;
         flex-direction: row;
+        &__input {
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+          border: 0.5px solid $mercury;
+          border-radius: 4px;
+          &__field {
+            border: none;
+          }
+        }
         &__avatar {
         display: flex;
         }
@@ -28,6 +41,17 @@
           font-family: $primary-bold;
           color: $white;
           border: none;
+          &__content {
+            padding-left: 10px;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            &__text {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            }
+          }
         }
       }
     }
@@ -131,6 +155,10 @@
     }
   }
 }
+.sumary__image{
+  width: 100px;
+  height: 100px;
+}
 //Mobile
 @media (max-width: $mobile-screen-min-size) {
   .nav__header {
@@ -151,8 +179,13 @@
     flex-direction: row;
   }
   .nav__header__ctn__elements__input {
+    border: 0.5px solid $mercury;
+    border-radius: 4px;
     height: 36px;
-    border: 4px;
+    border-radius: 4px;
+  }
+  .nav__header__ctn__elements__input { 
+    border: none;
   }
   .nav__header__ctn__elements__avatar__image {
     width: 36px;
@@ -161,11 +194,12 @@
     object-fit: cover;
   }
   .nav__header__ctn__upload {
+    padding: 16px;
     display: flex;
     justify-content: center;
   }
   .nav__header__ctn__upload__btn {
-    padding: 15px 110px;
+    padding: 10px 98px;
   }
   .main__container__header {
     padding: 0px 16px 24px 16px;
@@ -229,9 +263,11 @@
     flex-direction: row;
   }
   .nav__header__ctn {
+    padding-right: 16px;
+    padding-left: 65px;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .nav__header__logo {
     padding: 26px 34px;
@@ -249,20 +285,30 @@
     width: 150px;
   }
   .nav__header__ctn__elements__avatar__image {
-    width: 40px;
+    display: none;
+    // width: 40px;
+    // height: 40px;
+    // border-radius: 50%;
+    // -o-object-fit: cover;
+    // object-fit: cover;
+  }
+  .nav__header__ctn__avatar {
+    display: flex;
+  }
+  .nav__header__ctn__avatar__picture {
     height: 40px;
+    width: 40px;
     border-radius: 50%;
-    -o-object-fit: cover;
     object-fit: cover;
   }
   .main__section__div__title {
-    font-size: 14px;
+    font-size: 12px;
   }
   .main__section__elements {
     flex-direction: row;
     justify-content: space-around;
   }
-  .main__section__elements__avatar__image {
+  .main__section__elements__cont__avatar__image {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -289,6 +335,13 @@
     width: 230px;
     height: 38px;
   }
+  .nav__header__ctn {
+    padding-right: 16px;
+    padding-left: 65px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   .nav__header__ctn__upload__btn {
     font-size: 12px;
     height: 40px;
@@ -297,15 +350,25 @@
   .nav__header__ctn__elements { 
     align-items: center;
   }
-  .nav__header__ctn__elements__avatar__image {
-    width: 40px;
+  .nav__header__ctn__avatar {
+    display: flex;
+  }
+  .nav__header__ctn__avatar__picture {
     height: 40px;
+    width: 40px;
     border-radius: 50%;
-    -o-object-fit: cover;
     object-fit: cover;
   }
+  .nav__header__ctn__elements__avatar__image {
+    display: none;
+    // width: 40px;
+    // height: 40px;
+    // border-radius: 50%;
+    // -o-object-fit: cover;
+    // object-fit: cover;
+  }
   .main__section__div__title {
-    font-size: 14px;
+    font-size: 12px;
   }
   .main__section__elements {
     flex-direction: row;
@@ -315,6 +378,13 @@
     font-size: 12px;
     height: 36px;
     width: 150px;
+  }
+  .main__section__elements__cont__avatar__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
 
