@@ -152,9 +152,23 @@
   color: #323232;
 }
 
-.sumary__image {
-  width: 100px;
-  height: 100px;
+.sumary {
+  display: flex;
+}
+.sumary__wrap {
+  display: flex;
+}
+.sumary__elements {
+  display: flex;
+}
+.sumary__elements__id {
+  display: none;
+}
+.sumary__elements__title {
+  display: flex;
+}
+.sumary__elements__channel {
+  display: flex;
 }
 
 @media (max-width: 320px) {
@@ -198,6 +212,9 @@
   }
   .nav__header__ctn__upload__btn {
     padding: 10px 98px;
+  }
+  .nav__header__ctn__avatar__picture {
+    display: none;
   }
   .main__container__header {
     padding: 0px 16px 24px 16px;
@@ -250,6 +267,34 @@
   .comments__division__placeholder {
     height: 36px;
     width: 36px;
+  }
+  .sumary {
+    display: flex;
+    padding: 16px;
+  }
+  .sumary__wrap {
+    display: flex;
+  }
+  .sumary__wrap__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4px;
+    width: 100px;
+    height: 60px;
+  }
+  .sumary__elements {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sumary__elements__id {
+    display: none;
+  }
+  .sumary__elements__title {
+    display: flex;
+  }
+  .sumary__elements__channel {
+    display: flex;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -313,7 +358,7 @@
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
   .nav__header__logo {
-    padding: 30px 110px;
+    padding: 30px 130px;
   }
   input {
     font-family: "Avenir Next";
@@ -323,8 +368,8 @@
     height: 38px;
   }
   .nav__header__ctn {
-    padding-right: 16px;
-    padding-left: 65px;
+    padding-right: 90px;
+    padding-left: 190px;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;

@@ -155,10 +155,25 @@
     }
   }
 }
-.sumary__image{
-  width: 100px;
-  height: 100px;
+.sumary {
+  display: flex;
+  &__wrap {
+    display: flex;
+  }
+  &__elements {
+    display: flex;
+    &__id {
+      display: none;
+    }
+    &__title {
+      display: flex;
+    }
+    &__channel { 
+      display: flex;
+    }
+  }
 }
+
 //Mobile
 @media (max-width: $mobile-screen-min-size) {
   .nav__header {
@@ -200,6 +215,9 @@
   }
   .nav__header__ctn__upload__btn {
     padding: 10px 98px;
+  }
+  .nav__header__ctn__avatar__picture {
+    display: none;
   }
   .main__container__header {
     padding: 0px 16px 24px 16px;
@@ -254,7 +272,33 @@
     height: 36px;
     width: 36px;
   }
-  
+  .sumary {
+    display: flex;
+    padding: 16px;
+    &__wrap {
+      display: flex;
+      &__image {
+        object-fit: cover;
+        border-radius: 4px;
+        width: 100px;
+        height: 60px;
+      }
+    }
+    &__elements {
+      padding-left: 16px;
+      display: flex;
+      flex-direction: column;
+      &__id {
+        display: none;
+      }
+      &__title {
+        display: flex;
+      }
+      &__channel { 
+        display: flex;
+      }
+    }
+  }
 }
 
 //Tablet
@@ -326,7 +370,7 @@
 //Desktop
 @media (min-width: 1280px) and (max-width: $desktop-screen-max-size) {
   .nav__header__logo {
-    padding: 30px 110px;
+    padding: 30px 130px;
   }
   input {
     font-family: $primary-normal;
@@ -336,8 +380,8 @@
     height: 38px;
   }
   .nav__header__ctn {
-    padding-right: 16px;
-    padding-left: 65px;
+    padding-right: 90px;
+    padding-left: 190px;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
