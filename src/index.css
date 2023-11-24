@@ -166,9 +166,13 @@
 }
 .sumary__elements__title {
   display: flex;
+  font-family: "Avenir Next Bold";
+  color: #323232;
 }
 .sumary__elements__channel {
   display: flex;
+  font-family: "Avenir Next";
+  color: #323232;
 }
 
 .gallery {
@@ -307,9 +311,11 @@
   }
   .sumary__elements__title {
     display: flex;
+    font-family: "Avenir Next Bold";
   }
   .sumary__elements__channel {
     display: flex;
+    font-family: "Avenir Next";
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -400,7 +406,17 @@
     border-radius: 4px;
   }
   .sumary__elements {
-    padding: 0 16px;
+    width: 35%;
+    padding: 17px 16px;
+    flex-direction: column;
+  }
+  .sumary__elements__title {
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+  .sumary__elements__channel {
+    padding-top: 15px;
+    font-size: 14px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {

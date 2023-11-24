@@ -167,9 +167,13 @@
     }
     &__title {
       display: flex;
+      font-family: $primary-bold;
+      color: $brainflix-black;
     }
     &__channel { 
       display: flex;
+      font-family: $primary-normal;
+      color: $brainflix-black;
     }
   }
 }
@@ -308,9 +312,11 @@
       }
       &__title {
         display: flex;
+        font-family: $primary-bold;
       }
       &__channel { 
         display: flex;
+        font-family: $primary-normal;
       }
     }
   }
@@ -407,7 +413,17 @@
     border-radius: 4px;
   }
   .sumary__elements {
-    padding: 0 16px;
+    width: 35%;
+    padding: 17px 16px;
+    flex-direction: column;
+  }
+  .sumary__elements__title {
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+  .sumary__elements__channel {
+    padding-top: 15px;
+    font-size: 14px;
   }
 }
 
@@ -474,6 +490,7 @@
     -o-object-fit: cover;
     object-fit: cover;
   }
+  
 }
 
 // TODO video list components
