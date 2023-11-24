@@ -171,6 +171,17 @@
   display: flex;
 }
 
+.gallery {
+  display: flex;
+}
+.gallery__section__headline {
+  display: flex;
+}
+.gallery__section__headline__title {
+  font-family: "Avenir Next";
+  color: #e1e1e1;
+}
+
 @media (max-width: 320px) {
   .nav__header {
     padding: 16px 0;
@@ -254,6 +265,10 @@
   }
   .main__section__elements__btn__comment {
     padding: 13px 90px;
+  }
+  .main__video__image {
+    width: 80px;
+    height: 60px;
   }
   .gallery__header__title {
     padding: 24px 16px;
@@ -354,6 +369,38 @@
     font-size: 12px;
     height: 36px;
     width: 150px;
+  }
+  .main__video__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 auto;
+    height: 430px;
+    width: 768px;
+  }
+  .main__video__headline {
+    padding: 16px 24px;
+  }
+  .main__video__headline__title {
+    font-size: 33px;
+    font-family: "Avenir Next Bold";
+  }
+  .gallery__section__headline {
+    padding: 16px 24px;
+    font-size: 12px;
+  }
+  .gallery__section__playlist {
+    padding: 0 24px;
+  }
+  .sumary__wrap__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 150px;
+    height: 90px;
+    padding: 16px 0;
+    border-radius: 4px;
+  }
+  .sumary__elements {
+    padding: 0 16px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
