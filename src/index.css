@@ -116,7 +116,6 @@
 }
 .main__section__elements__btn {
   display: flex;
-  border-bottom: 2px solid #e1e1e1;
 }
 .main__section__elements__btn__comment {
   background-color: #0095FF;
@@ -262,6 +261,9 @@
        object-fit: cover;
   }
   .main__section__elements__btn {
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0 auto;
+    width: 90%;
     flex-direction: row;
     justify-content: center;
     padding-top: 16px;
@@ -273,6 +275,16 @@
   .main__video__image {
     width: 320px;
     height: 190px;
+  }
+  .main__video__headline {
+    margin: 0 auto;
+    width: 90%;
+    padding: 16px 0;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .main__video__headline__title {
+    font-family: "Avenir Next Bold";
+    font-size: 24px;
   }
   .gallery__header__title {
     padding: 24px 16px;
