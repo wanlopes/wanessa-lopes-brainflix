@@ -11,7 +11,6 @@
     width: 100%;
     display: flex;
     &__logo {
-      height: 25px;
       display: flex;
     }
     &__ctn {
@@ -196,6 +195,7 @@
     flex-direction: column;
   }
   .nav__header__logo {
+    height: 25px;
     padding: $headline-padding-after-mobile 0;
     flex-direction: row;
     justify-content: center;
@@ -274,8 +274,8 @@
 
   }
   .main__video__image {
-    width: 80px;
-    height: 60px;
+    width: 320px;
+    height: 190px;
   }
   .gallery__header__title {
     padding: $headline-padding-before-mobile $headline-padding-after-mobile;
@@ -335,6 +335,7 @@
     justify-content: space-evenly;
   }
   .nav__header__logo {
+    height: 25px;
     padding: 26px 34px;
   }
   input {
@@ -392,11 +393,16 @@
     width: 768px;
   }
   .main__video__headline{
-    padding: 16px 24px;
+    padding: 16px 34px;
   }
   .main__video__headline__title {
     font-size: 33px;
     font-family: $primary-bold;
+  }
+  .main__video__channel {
+    padding-left: 34px;
+    font-family: $primary-bold;
+    font-size: 14px;
   }
   .gallery__section__headline {
     padding: 16px 24px;
@@ -471,6 +477,18 @@
     // -o-object-fit: cover;
     // object-fit: cover;
   }
+  .main__video__headline {
+    padding: 24px 130px;
+  }
+  .main__video__channel {
+    padding-left: 130px;
+    font-family: $primary-bold;
+    font-size: 14px;
+  }
+  .main__video__headline__title {
+    font-family: $primary-bold;
+    font-size: 33px;
+  }
   .main__section__div__title {
     font-size: 12px;
   }
@@ -490,7 +508,39 @@
     -o-object-fit: cover;
     object-fit: cover;
   }
-  
+  aside {
+    border-left: 2px solid $mercury;
+    width: 35%;
+    padding-left: 24px;
+    float: right;
+  }
+  .gallery__section__headline {
+    padding: 16px 24px;
+    font-size: $label-buton-text-size-desktop;
+  }
+  .sumary__wrap {
+    padding: 16px 24px;
+  }
+  .sumary__wrap__image {
+    object-fit: cover;
+    width: 130px;
+    height: 80px;
+    border-radius: 4px;
+  }
+  .sumary__elements {
+    line-height: 22px;
+    width: 35%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .sumary__elements__title {
+    font-size: 14px;
+    font-family: $primary-bold;
+  }
+  .sumary__elements__channel {
+    font-size: 14px;
+    font-family: $primary-normal;
+  }
 }
 
 // TODO video list components
