@@ -3,6 +3,8 @@ import avatar from "../assets/Images/Mohan-muruge.jpg";
 import MainVideo from "./MainVideo";
 import { useState } from "react";
 import videosData from "../Data/videos.json";
+import CommentButton from "./CommentButton";
+import addcomment from "../assets/Icons/add_comment.svg"
 // import views from "../assets/Icons/views.svg";
 // import likes from "../assets/Icons/likes.svg";
 // import Fullscreen from "../assets/Icons/fullscreen.svg";
@@ -36,7 +38,14 @@ function Main() {
           </div>
           <div className="main__section__elements__btn">
             <button className="main__section__elements__btn__comment">
-              COMMENT
+              <div className="main__section__elements__btn__comment__pack">
+                <div className="main__section__elements__btn __comment__pack__icon">
+                  <img src={addcomment} alt="" />
+                </div>
+                <div className="main__section__elements__btn__comment__pack__text">
+                  COMMENT
+                </div>
+              </div>
             </button>
           </div>
         </div>

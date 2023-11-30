@@ -8,11 +8,11 @@ function Gallery({ setFirstVideo }) {
     <aside className="gallery">
       <section className="gallery__section">
         <div className="gallery__section__headline">
-          <h2 className="gallery__section__headline__title">Next Videos</h2>
+          <h2 className="gallery__section__headline__title">NEXT VIDEOS</h2>
         </div>
         <div className="gallery__section__playlist">
           {videos.map((video) => (
-            <a onClick={() => setFirstVideo(video)}>
+            <a href=" " onClick={() => setFirstVideo(video)}>
               <VideoSumary
                 key={video.id}
                 id={video.id}

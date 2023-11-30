@@ -20,6 +20,7 @@
         display: flex;
         flex-direction: row;
         &__input {
+          background-color: $alabaster;
           padding-left: 10px;
           display: flex;
           align-items: center;
@@ -116,9 +117,16 @@
         &__comment {
           background-color: $brainflix-blue;
           border-radius: 4px;
-          font-family: $primary-bold;
-          color: $white;
-          border: none;
+          &__pack {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &__text {
+              font-family: $primary-bold;
+              color: $white;
+              border: none;
+            }
+          }
         }
       }
     }
@@ -179,6 +187,7 @@
   display: flex;
   &__section {
     &__headline {
+      color: $silver;
       display: flex;
       &__title {
         font-family: $primary-normal;
@@ -229,6 +238,12 @@
   }
   .nav__header__ctn__upload__btn {
     padding: 10px 98px;
+    display: flex;
+  }
+  .nav__header__ctn__upload__btn__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   .nav__header__ctn__avatar__picture {
     display: none;
@@ -303,6 +318,14 @@
     height: 36px;
     width: 36px;
   }
+  .gallery__section__headline {
+    padding: $headline-padding-after-mobile 0 0 $headline-padding-after-mobile
+  }
+  .gallery__section__headline__title {
+    color: $silver;
+    font-family: $primary-normal;
+    font-size: 14px;
+  }
   .sumary {
     display: flex;
     padding: 16px;
@@ -319,14 +342,17 @@
       padding-left: 16px;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       &__id {
         display: none;
       }
       &__title {
+        font-size: $body-text-size-mobile;
         display: flex;
-        font-family: $primary-bold;
+        font-family: $primary-normal;
       }
       &__channel { 
+        font-size: $body-text-size-mobile;
         display: flex;
         font-family: $primary-normal;
       }
@@ -395,8 +421,15 @@
   }
   .main__section__elements__btn__comment {
     font-size: 12px;
-    height: 36px;
+    // height: 36px;
     width: 150px;
+  }
+  .main__section__elements__btn__comment__pack {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .main__video__image {
     object-fit: cover;
@@ -423,19 +456,23 @@
   .gallery__section__playlist {
     padding: 0 24px;
   }
+  .sumary {
+    padding: 16px 0;
+  }
   .sumary__wrap__image {
     object-fit: cover;
     width: 150px;
     height: 90px;
-    padding: 16px 0;
     border-radius: 4px;
   }
   .sumary__elements {
+    justify-content: space-around;
     width: 35%;
-    padding: 17px 16px;
+    padding: 0 16px;
     flex-direction: column;
   }
   .sumary__elements__title {
+    font-family: $primary-normal;
     padding-bottom: 15px;
     font-size: 14px;
   }
@@ -488,6 +525,12 @@
     // border-radius: 50%;
     // -o-object-fit: cover;
     // object-fit: cover;
+  }
+  .main__video { 
+    width: 100%;
+  }
+  .main__video__image {
+    width: 100%
   }
   .main__video__headline {
     padding: 24px 130px;
