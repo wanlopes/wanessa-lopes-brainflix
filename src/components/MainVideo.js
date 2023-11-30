@@ -25,6 +25,16 @@ function MainVideo({ props }) {
       <p className="main__video__views">{selectedVideo.views}</p>
       <p className="main__video__likes">{selectedVideo.likes}</p>
       <p className="main__video__timestamp">{selectedVideo.timestamp}</p>
+      <div className="main__video__comments">
+        {selectedVideo.comments.map((comment) => (
+          <div>
+            <p>{comment.name}</p>
+            <p>{comment.comment}</p>
+            <p>{comment.likes}</p>
+            <p>{comment.timestamp}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
