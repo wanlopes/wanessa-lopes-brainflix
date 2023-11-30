@@ -12,7 +12,7 @@ function Gallery({ setFirstVideo }) {
         </div>
         <div className="gallery__section__playlist">
           {videos.map((video) => (
-            <a href=" " onClick={() => setFirstVideo(video)}>
+            <a onClick={() => setFirstVideo(video)}>
               <VideoSumary
                 key={video.id}
                 id={video.id}

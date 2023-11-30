@@ -3,20 +3,17 @@ import avatar from "../assets/Images/Mohan-muruge.jpg";
 import MainVideo from "./MainVideo";
 import { useState } from "react";
 import videosData from "../Data/videos.json";
-import CommentButton from "./CommentButton";
-import addcomment from "../assets/Icons/add_comment.svg"
-// import views from "../assets/Icons/views.svg";
-// import likes from "../assets/Icons/likes.svg";
-// import Fullscreen from "../assets/Icons/fullscreen.svg";
-// import Play from "../assets/Icons/play.svg";
+// import CommentButton from "./CommentButton";
+import addcomment from "../assets/Icons/add_comment.svg";
+// import videodetails from "../Data/video-details.json";
 // import CommentsSection from "./CommentsSection";
 
 function Main() {
-  const defaultVideo = { title: "Lilly", channel: "Wanessa" };
+  const defaultVideo = { title: "Lilly", channel: "Wanessa"};
   const [firstVideo, setFirstVideo] = useState(videosData[0]);
   return (
     <section className="main">
-      <MainVideo video={firstVideo} />
+      <MainVideo props={firstVideo} />
       <div className="main__section">
         <div className="main__section__div">
           <h2 className="main__section__div__title">JOIN THE CONVERSATION</h2>
