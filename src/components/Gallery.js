@@ -1,7 +1,7 @@
 import VideoSumary from "./VideoSumary";
 import videosData from "../Data/videos.json";
 
-function Gallery({ setFirstVideo }) {
+function Gallery({ setFirstVideo, firstVideo }) {
   const videos = videosData;
 
   return (
@@ -11,17 +11,20 @@ function Gallery({ setFirstVideo }) {
           <h2 className="gallery__section__headline__title">NEXT VIDEOS</h2>
         </div>
         <div className="gallery__section__playlist">
-          {videos.map((video) => (
-            <a onClick={() => setFirstVideo(video)}>
+          {videos
+            .filter((video) => video.id !== firstVideo.id)
+            .map((video) => (
+              <a onClick={() => setFirstVideo(video)}>
               <VideoSumary
+                // onClick={() => setFirstVideo(video)}
                 key={video.id}
                 id={video.id}
                 title={video.title}
                 channel={video.channel}
                 image={video.image}
               />
-            </a>
-          ))}
+              </a>
+            ))}
         </div>
       </section>
     </aside>

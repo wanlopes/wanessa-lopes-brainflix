@@ -9,8 +9,9 @@ import addcomment from "../assets/Icons/add_comment.svg";
 // import CommentsSection from "./CommentsSection";
 
 function Main() {
-  const defaultVideo = { title: "Lilly", channel: "Wanessa"};
+  const defaultVideo = { title: "Lilly", channel: "Wanessa" };
   const [firstVideo, setFirstVideo] = useState(videosData[0]);
+  // console.log(firstVideo);
   return (
     <section className="main">
       <MainVideo props={firstVideo} />
@@ -48,7 +49,11 @@ function Main() {
         </div>
       </div>
       {/* <CommentsSection></CommentsSection> */}
-      <Gallery setFirstVideo={setFirstVideo}></Gallery>
+      <Gallery
+        setFirstVideo={setFirstVideo}
+        firstVideo={firstVideo}
+        className="main__video__comments"
+      ></Gallery>
     </section>
   );
 }

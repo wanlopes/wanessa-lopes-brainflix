@@ -72,6 +72,48 @@
   justify-content: center;
 }
 
+.main__video__details__set {
+  display: flex;
+  flex-direction: row;
+}
+.main__video__details__set__duo {
+  display: flex;
+}
+.main__video__details__set__duo__id {
+  display: none;
+}
+.main__video__details__set__duo__channel {
+  font-family: "Avenir Next Bold";
+  color: #323232;
+}
+.main__video__details__set__duo__timestamp {
+  font-family: "Avenir Next";
+  color: #afafaf;
+}
+.main__video__details__set__views {
+  font-family: "Avenir Next";
+  color: #afafaf;
+}
+.main__video__details__set__likes {
+  font-family: "Avenir Next";
+  color: #afafaf;
+}
+.main__video__details__paragraph__description {
+  font-family: "Avenir Next";
+  color: #323232;
+}
+.main__video__comments__name {
+  font-family: "Avenir Next Bold";
+  color: #323232;
+}
+.main__video__comments__comment {
+  font-family: "Avenir Next";
+  color: #323232;
+}
+.main__video__comments__timestamp {
+  font-family: "Avenir Next";
+  color: #323232;
+}
 .main__container__header__title {
   font-family: "Avenir Next";
   color: #323232;
@@ -300,6 +342,34 @@
   .main__video__headline__title {
     font-family: "Avenir Next Bold";
     font-size: 24px;
+  }
+  .main__video__details {
+    padding: 16px;
+    font-size: 13px;
+  }
+  .main__video__details__set {
+    justify-content: space-between;
+  }
+  .main__video__details__set__duo {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main__video__details__paragraph__description {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .main__video__details__set__duo__icon {
+    width: 24px;
+  }
+  .main__video__comments {
+    padding: 16px;
+  }
+  .main__video__comments__name {
+    font-size: 13px;
+  }
+  .main__video__comments__comment {
+    font-size: 13px;
+    line-height: 20px;
   }
   .gallery__header__title {
     padding: 24px 16px;
