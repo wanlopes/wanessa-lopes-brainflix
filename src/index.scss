@@ -523,10 +523,40 @@
     font-size: 33px;
     font-family: $primary-bold;
   }
+  .main__video__details {
+    padding: 0 $headline-padding-after-desktop $headline-padding-after-desktop $headline-padding-after-desktop;
+  }
+  .main__video__details__set {
+    border-bottom: 1px solid $mercury;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
   .main__video__channel {
     padding-left: 34px;
     font-family: $primary-bold;
     font-size: 14px;
+  }
+  .main__video__details__paragraph{
+    padding-top: $headline-padding-after-mobile
+  }
+  .main__video__details__paragraph__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .main__video__comments {
+    padding: 24px $headline-padding-between-components-desktop;
+  }
+  .main__video__comments__name {
+    font-size: $body-text-size-desktop;
+  }
+  .main__video__comments__timestamp {
+    font-size: $body-text-size-desktop;
+    color: $silver;
+  }
+  .main__video__comments__comment {
+    font-size: 14px;
+    line-height: 20px;
   }
   .gallery__section__headline {
     padding: 16px 24px;

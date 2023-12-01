@@ -505,10 +505,40 @@
     font-size: 33px;
     font-family: "Avenir Next Bold";
   }
+  .main__video__details {
+    padding: 0 36px 36px 36px;
+  }
+  .main__video__details__set {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
   .main__video__channel {
     padding-left: 34px;
     font-family: "Avenir Next Bold";
     font-size: 14px;
+  }
+  .main__video__details__paragraph {
+    padding-top: 16px;
+  }
+  .main__video__details__paragraph__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .main__video__comments {
+    padding: 24px 36px;
+  }
+  .main__video__comments__name {
+    font-size: 14px;
+  }
+  .main__video__comments__timestamp {
+    font-size: 14px;
+    color: #afafaf;
+  }
+  .main__video__comments__comment {
+    font-size: 14px;
+    line-height: 20px;
   }
   .gallery__section__headline {
     padding: 16px 24px;
