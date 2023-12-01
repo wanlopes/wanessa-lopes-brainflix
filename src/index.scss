@@ -242,7 +242,7 @@
       display: flex;
       &__title {
         font-family: $primary-normal;
-        color: $mercury;
+        color: $silver;
       }
     }
   }
@@ -500,7 +500,7 @@
   }
   .main__section__elements__btn__comment {
     font-size: 12px;
-    // height: 36px;
+    height: 40px;
     width: 150px;
   }
   .main__section__elements__btn__comment__pack {
@@ -562,6 +562,9 @@
     padding: 16px 24px;
     font-size: $label-buton-text-size-desktop;
   }
+  .gallery__section__headline__title {
+    font-size: $subheader-text-size-mobile;
+  }
   .gallery__section__playlist {
     padding: 0 24px;
   }
@@ -570,8 +573,8 @@
   }
   .sumary__wrap__image {
     object-fit: cover;
-    width: 150px;
-    height: 90px;
+    width: 110px;
+    height: 65px;
     border-radius: 4px;
   }
   .sumary__elements {
@@ -582,7 +585,7 @@
   }
   .sumary__elements__title {
     font-family: $primary-normal;
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
     font-size: 14px;
   }
   .sumary__elements__channel {
@@ -636,7 +639,7 @@
     // object-fit: cover;
   }
   .main__video { 
-    width: 100%;
+    // width: 100%;
   }
   .main__video__image {
     width: 100%
@@ -653,6 +656,13 @@
     font-family: $primary-bold;
     font-size: 33px;
   }
+  .main__video__comments {
+    width: 50%;
+    padding: 16px 16px 16px 130px;
+  }
+  .main__section {
+    width: 68%;
+  }
   .main__section__div__title {
     font-size: 12px;
   }
@@ -660,10 +670,16 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  .main__section__elements__btn {
+    padding-left: 5px;
+  }
   .main__section__elements__btn__comment {
     font-size: 12px;
-    height: 36px;
-    width: 150px;
+    // height: 36px;
+    width: 155px;
+  }
+  .main__section__elements__btn__comment__pack__text {
+    padding-left: 14px;
   }
   .main__section__elements__cont__avatar__image {
     width: 40px;
