@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import videoDetails from "../Data/video-details.json";
 import likes from "../assets/Icons/likes.svg";
 import views from "../assets/Icons/views.svg";
+import InputComments from "./InputComments";
 
 const convertTimeStampToDate = (timestamp) => {
   let date = new Date(timestamp);
@@ -34,7 +35,7 @@ function MainVideo({ props }) {
             <p className="main__video__details__set__duo__channel">
               {selectedVideo.channel}
             </p>
-            <p className="main__video__details__set__duo __timestamp">
+            <p className="main__video__details__set__duo__timestamp">
               {convertTimeStampToDate(selectedVideo.timestamp)}
             </p>
           </div>
@@ -65,15 +66,19 @@ function MainVideo({ props }) {
       </div>
       {selectedVideo.comments.map((comment) => (
         <div className="main__video__comments">
-          <p className="main__video__comments__name">{comment.name}</p>
-          <p className="main__video__comments__timestamp">
-            {convertTimeStampToDate(comment.timestamp)}
-          </p>
+          <div className="main__video__comments__placeholder"></div>
+          <div className="main__video__comments__items">
+            <p className="main__video__comments__items__name">{comment.name}</p>
+            <p className="main__video__comments__items__timestamp">
+              {convertTimeStampToDate(comment.timestamp)}
+            </p>
+          </div>
           <p className="main__video__comments__comment">{comment.comment}</p>
         </div>
       ))}
     </div>
   );
+  <InputComments/>
 }
 
 export default MainVideo;

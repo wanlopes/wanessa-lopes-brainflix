@@ -1,0 +1,11 @@
+@mixin placeholder-style {
+  background-color: $mercury; 
+  border-radius: 50%; 
+}
+
+@mixin avatar-style($width, $height, $border-radius) {
+  display: flex;
+  width: $width; 
+  height: $height;
+  border-radius: $border-radius; 
+}

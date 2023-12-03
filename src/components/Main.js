@@ -1,12 +1,10 @@
 import Gallery from "./Gallery";
-import avatar from "../assets/Images/Mohan-muruge.jpg";
 import MainVideo from "./MainVideo";
 import { useState } from "react";
 import videosData from "../Data/videos.json";
-// import CommentButton from "./CommentButton";
 import addcomment from "../assets/Icons/add_comment.svg";
-// import videodetails from "../Data/video-details.json";
-// import CommentsSection from "./CommentsSection";
+import avatar from "../assets/Images/Mohan-muruge.jpg";
+
 
 function Main() {
   const defaultVideo = { title: "Lilly", channel: "Wanessa" };
