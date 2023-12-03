@@ -3,6 +3,10 @@ import videoDetails from "../Data/video-details.json";
 import likes from "../assets/Icons/likes.svg";
 import views from "../assets/Icons/views.svg";
 
+const convertTimeStampToDate = (timestamp) => {
+  let date = new Date(timestamp);
+  return date.toLocaleDateString();
+};
 
 function MainVideo({ props }) {
   const selectedVideo = videoDetails.find(
@@ -11,10 +15,8 @@ function MainVideo({ props }) {
   console.log(selectedVideo.image);
   return (
     <div className="main__video">
-      {/* <img className="main__video__image" src={video.image} alt=""></img> */}
       <video
         className="main__video__image"
-        // placeholder={selectedVideo.image}
         poster={selectedVideo.image}
         controls
       >
@@ -33,7 +35,7 @@ function MainVideo({ props }) {
               {selectedVideo.channel}
             </p>
             <p className="main__video__details__set__duo __timestamp">
-              {selectedVideo.timestamp}
+              {convertTimeStampToDate(selectedVideo.timestamp)}
             </p>
           </div>
           <div className="main__video__details__set__duo">
@@ -65,7 +67,7 @@ function MainVideo({ props }) {
         <div className="main__video__comments">
           <p className="main__video__comments__name">{comment.name}</p>
           <p className="main__video__comments__timestamp">
-            {comment.timestamp}
+            {convertTimeStampToDate(comment.timestamp)}
           </p>
           <p className="main__video__comments__comment">{comment.comment}</p>
         </div>

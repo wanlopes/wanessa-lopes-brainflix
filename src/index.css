@@ -60,6 +60,9 @@
   color: #ffffff;
   border: none;
 }
+.nav__header__ctn__upload__btn:hover {
+  background-color: #0065ad;
+}
 .nav__header__ctn__upload__btn__content {
   padding-left: 10px;
   display: flex;
@@ -164,6 +167,9 @@
   border: none;
   background-color: #0095FF;
   border-radius: 0.25rem;
+}
+.main__section__elements__btn__comment:hover {
+  background-color: #0065ad;
 }
 .main__section__elements__btn__comment__pack {
   display: flex;
@@ -439,20 +445,20 @@
     justify-content: space-evenly;
   }
   .nav__header__logo {
-    height: 25px;
-    padding: 26px 34px;
+    height: 1.5625rem;
+    padding: 1.625rem 2.125rem;
   }
   input {
     font-family: "Avenir Next";
     color: #323232;
     font-size: 12px;
-    padding: 10px 16px;
-    width: 190px;
+    padding: 0.625rem 16px;
+    width: 11.875;
   }
   .nav__header__ctn__upload__btn {
     font-size: 12px;
-    height: 36px;
-    width: 150px;
+    height: 2.25rem;
+    width: 9.375rem;
   }
   .nav__header__ctn__elements__avatar__image {
     display: none;
@@ -461,8 +467,8 @@
     display: flex;
   }
   .nav__header__ctn__avatar__picture {
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -475,19 +481,19 @@
     justify-content: space-around;
   }
   .main__section__elements__cont__avatar__image {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     -o-object-fit: cover;
     object-fit: cover;
   }
   .main__section__elements__btn__comment {
     font-size: 12px;
-    height: 40px;
-    width: 150px;
+    height: 2.5rem;
+    width: 9.375rem;
   }
   .main__section__elements__btn__comment__pack {
-    width: 150px;
+    width: 9.375rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -501,7 +507,7 @@
     width: 768px;
   }
   .main__video__headline {
-    padding: 16px 34px;
+    padding: 36px 2.125rem;
   }
   .main__video__headline__title {
     font-size: 33px;
@@ -511,13 +517,13 @@
     padding: 0 36px 36px 36px;
   }
   .main__video__details__set {
-    border-bottom: 1px solid #e1e1e1;
-    padding-bottom: 10px;
+    border-bottom: 0.0625 solid #e1e1e1;
+    padding-bottom: 0.625rem;
     width: 100%;
     justify-content: space-between;
   }
   .main__video__channel {
-    padding-left: 34px;
+    padding-left: 2.125rem;
     font-family: "Avenir Next Bold";
     font-size: 14px;
   }
@@ -529,7 +535,7 @@
     line-height: 20px;
   }
   .main__video__comments {
-    padding: 24px 36px;
+    padding: 1.5rem 36px;
   }
   .main__video__comments__name {
     font-size: 14px;
@@ -553,14 +559,14 @@
     padding: 0 24px;
   }
   .sumary {
-    padding: 16px 0;
+    padding: 13px 0;
   }
   .sumary__wrap__image {
     -o-object-fit: cover;
        object-fit: cover;
-    width: 110px;
-    height: 65px;
-    border-radius: 4px;
+    width: 6.875rem;
+    height: 4.0625rem;
+    border-radius: 0.25rem;
   }
   .sumary__elements {
     justify-content: space-around;
@@ -573,32 +579,32 @@
     font-size: 14px;
   }
   .sumary__elements__channel {
-    padding-top: 15px;
+    padding-top: 0.9375rem;
     font-size: 14px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
   .nav__header__logo {
-    padding: 30px 130px;
+    padding: 1.875rem 8.125rem;
   }
   input {
     font-family: "Avenir Next";
     color: #323232;
-    font-size: 12px;
-    width: 230px;
-    height: 38px;
+    font-size: 0.75rem;
+    width: 14.375rem;
+    height: 2.375rem;
   }
   .nav__header__ctn {
-    padding-right: 90px;
-    padding-left: 190px;
+    padding-right: 5.625rem;
+    padding-left: 11.875rem;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
   }
   .nav__header__ctn__upload__btn {
     font-size: 12px;
-    height: 40px;
-    width: 165px;
+    height: 2.5rem;
+    width: 10.3125rem;
   }
   .nav__header__ctn__elements {
     align-items: center;
@@ -607,8 +613,8 @@
     display: flex;
   }
   .nav__header__ctn__avatar__picture {
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -620,10 +626,10 @@
     width: 100%;
   }
   .main__video__headline {
-    padding: 24px 130px;
+    padding: 24px 8.125rem;
   }
   .main__video__channel {
-    padding-left: 130px;
+    padding-left: 8.125rem;
     font-family: "Avenir Next Bold";
     font-size: 14px;
   }
@@ -633,7 +639,7 @@
   }
   .main__video__details {
     width: 48%;
-    padding: 16px 16px 16px 130px;
+    padding: 16px 16px 16px 8.125rem;
   }
   .main__video__details__paragraph__description {
     font-size: 14px;
@@ -641,10 +647,10 @@
   }
   .main__video__comments {
     width: 50%;
-    padding: 16px 16px 16px 130px;
+    padding: 16px 16px 16px 8.125rem;
   }
   .main__video__comments__name {
-    border-top: 1px solid #e1e1e1;
+    border-top: 0.0625 solid #e1e1e1;
     padding-top: 24px;
     font-size: 14px;
   }
@@ -667,25 +673,25 @@
     justify-content: space-around;
   }
   .main__section__elements__btn {
-    padding-left: 5px;
+    padding-left: 0.3125rem;
   }
   .main__section__elements__btn__comment {
     font-size: 12px;
-    width: 155px;
+    width: 9.6875rem;
   }
   .main__section__elements__btn__comment__pack__text {
     padding-left: 14px;
   }
   .main__section__elements__cont__avatar__image {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     -o-object-fit: cover;
     object-fit: cover;
   }
   aside {
     margin-top: -692px;
-    border-left: 1px solid #e1e1e1;
+    border-left: 0.0625 solid #e1e1e1;
     shape-outside: content-box;
     width: 35%;
     float: right;
