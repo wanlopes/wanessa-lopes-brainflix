@@ -6,7 +6,6 @@ import videosData from "../Data/videos.json";
 function Main() {
   const defaultVideo = { title: "title", channel: "channel" };
   const [firstVideo, setFirstVideo] = useState(videosData[0]);
-  // console.log(firstVideo);
   return (
     <section className="main">
       <MainVideo props={firstVideo} />
