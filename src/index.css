@@ -132,18 +132,22 @@
 }
 .main__video__comments__items {
   display: flex;
+  flex-direction: column;
+}
+.main__video__comments__items__block {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.main__video__comments__items__name {
+.main__video__comments__items__block__name {
   font-family: "Avenir Next Bold";
   color: #323232;
 }
-.main__video__comments__items__timestamp {
+.main__video__comments__items__block__timestamp {
   font-family: "Avenir Next";
   color: #afafaf;
 }
-.main__video__comments__comment {
+.main__video__comments__items__comment {
   font-family: "Avenir Next";
   color: #323232;
 }
@@ -377,11 +381,16 @@
     font-size: 13px;
   }
   .main__video__details__set {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e1e1e1;
     justify-content: space-between;
   }
   .main__video__details__set__left {
     flex-direction: column;
     justify-content: space-evenly;
+  }
+  .main__video__details__set__left__channel {
+    padding-bottom: 16px;
   }
   .main__video__details__paragraph__description {
     font-size: 13px;
@@ -391,17 +400,35 @@
     width: 24px;
   }
   .main__video__comments {
+    display: flex;
     padding: 16px;
   }
-  .main__video__comments__items__timestamp {
+  .main__video__comments__items {
+    padding: 0 0 10px 10px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .main__video__comments__items__block {
+    padding-bottom: 10px;
+  }
+  .main__video__comments__items__block__timestamp {
     font-size: 13px;
   }
-  .main__video__comments__items__name {
+  .main__video__comments__items__block__name {
     font-size: 13px;
   }
-  .main__video__comments__comment {
+  .main__video__comments__items__comment {
     font-size: 13px;
     line-height: 20px;
+  }
+  .main__video__details__set__right {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__video__details__set__right__duo {
+    padding-bottom: 16px;
+  }
+  .main__video__details__paragraph__description {
+    padding-top: 16px;
   }
   .gallery__header__title {
     padding: 24px 16px;
@@ -572,7 +599,18 @@
     line-height: 20px;
   }
   .main__video__comments {
+    display: flex;
     padding: 1.5rem 36px;
+  }
+  .main__video__comments__items {
+    padding-left: 16px;
+  }
+  .main__video__comments__items__block {
+    padding-bottom: 10px;
+  }
+  .main__video__comments__items__comment {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e1e1e1;
   }
   .main__video__comments__name {
     font-size: 14px;
@@ -581,7 +619,7 @@
     font-size: 14px;
     color: #afafaf;
   }
-  .main__video__comments__comment {
+  .main__video__comments__items__comment {
     font-size: 14px;
     line-height: 20px;
   }
@@ -705,7 +743,7 @@
     color: #afafaf;
     font-size: 14px;
   }
-  .main__video__comments__comment {
+  .main__video__comments__items__comment {
     padding: 16px 0;
     font-size: 14px;
     line-height: 22px;

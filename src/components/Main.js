@@ -7,7 +7,7 @@ import avatar from "../assets/Images/Mohan-muruge.jpg";
 
 
 function Main() {
-  const defaultVideo = { title: "Lilly", channel: "Wanessa" };
+  const defaultVideo = { title: "title", channel: "channel" };
   const [firstVideo, setFirstVideo] = useState(videosData[0]);
   // console.log(firstVideo);
   return (

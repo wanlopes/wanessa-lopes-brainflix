@@ -83,7 +83,9 @@ function MainVideo({ props }) {
               </p>
             </div>
             <div></div>
-            <p className="main__video__comments__comment">{comment.comment}</p>
+            <p className="main__video__comments__items__comment">
+              {comment.comment}
+            </p>
           </div>
         </div>
       ))}
