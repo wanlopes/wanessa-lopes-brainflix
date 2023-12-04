@@ -118,11 +118,13 @@
       }
     }
     &__comments {
-      &__placeholder {
+      &__div {
+        &__placeholder {
         background-color: $mercury;
         border-radius: 50%;
         width: 36px;
         height: 36px;
+        }
       }
       &__items {
         display: flex;
@@ -587,6 +589,7 @@
     padding-top: $headline-padding-after-mobile;
   }
   .main__video__details__paragraph__description {
+    padding-top: 16px;
     font-size: $body-text-size-desktop;
     line-height: $section-line-height-desktop;
   }

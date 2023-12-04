@@ -70,14 +70,21 @@ function MainVideo({ props }) {
       </div>
       {selectedVideo.comments.map((comment) => (
         <div className="main__video__comments">
-          <div className="main__video__comments__placeholder"></div>
-          <div className="main__video__comments__items">
-            <p className="main__video__comments__items__name">{comment.name}</p>
-            <p className="main__video__comments__items__timestamp">
-              {convertTimeStampToDate(comment.timestamp)}
-            </p>
+          <div className="main__video__comments__div">
+            <div className="main__video__comments__div__placeholder"></div>
           </div>
-          <p className="main__video__comments__comment">{comment.comment}</p>
+          <div className="main__video__comments__items">
+            <div className="main__video__comments__items__block">
+              <p className="main__video__comments__items__block__name">
+                {comment.name}
+              </p>
+              <p className="main__video__comments__items__block__timestamp">
+                {convertTimeStampToDate(comment.timestamp)}
+              </p>
+            </div>
+            <div></div>
+            <p className="main__video__comments__comment">{comment.comment}</p>
+          </div>
         </div>
       ))}
       <div>
