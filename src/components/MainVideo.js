@@ -28,34 +28,38 @@ function MainVideo({ props }) {
       </div>
       <div className="main__video__details">
         <div className="main__video__details__set">
-          <div className="main__video__details__set__duo">
-            <p className="main__video__details__set__duo__id">
+          <div className="main__video__details__set__left">
+            <p className="main__video__details__set__left__id">
               {selectedVideo.id}
             </p>
-            <p className="main__video__details__set__duo__channel">
-              {selectedVideo.channel}
+            <p className="main__video__details__set__left__channel">
+              By {selectedVideo.channel}
             </p>
-            <p className="main__video__details__set__duo__timestamp">
+            <p className="main__video__details__set__left__timestamp">
               {convertTimeStampToDate(selectedVideo.timestamp)}
             </p>
           </div>
-          <div className="main__video__details__set__duo">
-            <img
-              className="main__video__details__set__duo__icon"
-              src={views}
-              alt=""
-            />
-            <p className="main__video__details__set__duo__views">
-              {selectedVideo.views}
-            </p>
-            <img
-              className="main__video__details__set__duo__icon"
-              src={likes}
-              alt=""
-            />
-            <p className="main__video__details__set__duo__likes">
-              {selectedVideo.likes}
-            </p>
+          <div className="main__video__details__set__right">
+            <div className="main__video__details__set__right__duo">
+              <img
+                className="main__video__details__set__right__duo__icon"
+                src={views}
+                alt=""
+              />
+              <p className="main__video__details__set__right__duo__views">
+                {selectedVideo.views}
+              </p>
+            </div>
+            <div className="main__video__details__set__right__duo">
+              <img
+                className="main__video__details__set__right__duo__icon"
+                src={likes}
+                alt=""
+              />
+              <p className="main__video__details__set__right__duo__likes">
+                {selectedVideo.likes}
+              </p>
+            </div>
           </div>
         </div>
         <div className="main__video__details__paragraph">
@@ -76,9 +80,11 @@ function MainVideo({ props }) {
           <p className="main__video__comments__comment">{comment.comment}</p>
         </div>
       ))}
+      <div>
+        <p>{selectedVideo.comments.length} Comments</p>
+      </div>
     </div>
   );
-  <InputComments/>
 }
 
 export default MainVideo;

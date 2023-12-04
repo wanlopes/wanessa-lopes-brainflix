@@ -1,4 +1,5 @@
 @use "styles/partials/global" as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -64,11 +65,17 @@
 
 .main {
   &__video {
+    &__image {
+      position: relative;
+      aspect-ratio: 16/9;
+      background-color: $brainflix-darkblack;
+    }
     &__details {
       &__set {
         display: flex;
         flex-direction: row;
-        &__duo {
+        justify-content: space-between;
+        &__left {
           display: flex;
           &__id {
             display: none;
@@ -82,13 +89,25 @@
             color: $silver;
           }
         }
-        &__views {
-          font-family: $primary-normal;
-          color: $silver;
-        }
-        &__likes {
-          font-family: $primary-normal;
-          color: $silver;
+        &__right {
+          display: flex;
+          flex-direction: row;
+          &__duo {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            &__icon {
+              padding-right: 10px;
+            }
+            &__views {
+              font-family: $primary-normal;
+              color: $silver;
+            }
+            &__likes {
+              font-family: $primary-normal;
+              color: $silver;
+            }
+          }
         }
       }
       &__paragraph {
@@ -257,6 +276,7 @@
     }
   }
 }
+
 //Mobile
 @media (max-width: $mobile-screen-min-size) {
   .nav__header {
@@ -372,7 +392,7 @@
   .main__video__details__set {
     justify-content: space-between;
   }
-  .main__video__details__set__duo {
+  .main__video__details__set__left {
     flex-direction: column;
     justify-content: space-evenly;
   }
@@ -530,7 +550,7 @@
     width: 768px;
   }
   .main__video__headline {
-    padding: $headline-padding-after-desktop 2.125rem;
+    padding: $headline-padding-after-mobile 2.125rem;
   }
   .main__video__headline__title {
     font-size: $page-header-text-size-desktop;
@@ -541,11 +561,23 @@
       $headline-padding-after-desktop;
   }
   .main__video__details__set {
-    border-bottom: 0.0625 solid $mercury;
+    border-bottom: 1px solid $mercury;
     padding-bottom: 0.625rem;
     width: 100%;
     justify-content: space-between;
   }
+  .main__video__details__set__left__channel {
+    padding-right: $headline-padding-after-desktop;
+    font-size: $body-text-size-desktop;
+  }
+  .main__video__details__set__left__timestamp {
+    font-size: $body-text-size-desktop;
+  }
+  .main__video__details__set__right__duo__views {
+    font-size: $body-text-size-desktop;
+    padding-right: $headline-padding-after-desktop ;
+  }
+
   .main__video__channel {
     padding-left: 2.125rem;
     font-family: $primary-bold;
@@ -653,9 +685,10 @@
     // object-fit: cover;
   }
   .main__video {
-    // width: 100%;
+    width: 100%;
   }
   .main__video__image {
+    height: 640px;
     width: 100%;
   }
   .main__video__headline {
@@ -673,11 +706,17 @@
   .main__video__details {
     width: 48%;
     padding: $headline-padding-after-mobile $headline-padding-after-mobile
-    $headline-padding-after-mobile 8.125rem;
+      $headline-padding-after-mobile 8.125rem;
   }
   .main__video__details__paragraph__description {
     font-size: $body-text-size-desktop;
     line-height: $body-line-height-desktop;
+  }
+  .main__video__details__set__left__channel {
+    padding-right: $headline-padding-after-desktop;
+  }
+  .main__video__details__set__right__duo__views {
+    padding-right: $headline-padding-after-desktop;
   }
   .main__video__comments {
     width: 50%;
@@ -694,6 +733,7 @@
     font-size: $body-text-size-desktop;
   }
   .main__video__comments__comment {
+    padding: 16px 0;
     font-size: $body-text-size-desktop;
     line-height: $body-line-height-desktop;
   }
