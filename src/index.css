@@ -360,7 +360,8 @@
     padding-bottom: 16px;
   }
   .main__section__elements__btn__comment {
-    padding: 0.8125rem 5.625rem;
+    height: 40px;
+    width: 220px;
   }
   .main__video__image {
     width: 20rem;
@@ -719,6 +720,10 @@
   .main__video__details {
     width: 48%;
     padding: 16px 16px 16px 8.125rem;
+  }
+  .main__video__details__set {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e1e1e1;
   }
   .main__video__details__paragraph__description {
     font-size: 14px;

@@ -375,8 +375,10 @@
     padding-bottom: $headline-padding-after-mobile;
   }
   .main__section__elements__btn__comment {
-    padding: 0.8125rem 5.625rem;
+    height: 40px;
+    width: 220px;
   }
+  
   .main__video__image {
     width: 20rem;
     height: 11.875rem;
@@ -748,6 +750,10 @@
     width: 48%;
     padding: $headline-padding-after-mobile $headline-padding-after-mobile
       $headline-padding-after-mobile 8.125rem;
+  }
+  .main__video__details__set {
+    padding-bottom: 16px;
+    border-bottom: 1px solid $mercury;
   }
   .main__video__details__paragraph__description {
     font-size: $body-text-size-desktop;

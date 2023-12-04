@@ -3,6 +3,8 @@ import videoDetails from "../Data/video-details.json";
 import likes from "../assets/Icons/likes.svg";
 import views from "../assets/Icons/views.svg";
 import InputComments from "./InputComments";
+import addcomment from "../assets/Icons/add_comment.svg";
+import avatar from "../assets/Images/Mohan-muruge.jpg";
 
 const convertTimeStampToDate = (timestamp) => {
   let date = new Date(timestamp);
@@ -67,7 +69,48 @@ function MainVideo({ props }) {
             {selectedVideo.description}
           </p>
         </div>
+        <div>
+          <p>{selectedVideo.comments.length} Comments</p>
+        </div>
       </div>
+      <div className="main__section">
+        <div className="main__section__div">
+          <h2 className="main__section__div__title">JOIN THE CONVERSATION</h2>
+        </div>
+        <div className="main__section__elements">
+          <div className="main__section__elements__cont">
+            <div className="main__section__elements__cont__avatar">
+              <img
+                className="main__section__elements__cont__avatar__image"
+                src={avatar}
+                alt=""
+              />
+            </div>
+            <div>
+              <form className="main__section__elements__cont__form">
+                <input
+                  className="papai"
+                  type="text"
+                  placeholder="Add a new comment"
+                />
+              </form>
+            </div>
+          </div>
+          <div className="main__section__elements__btn">
+            <button className="main__section__elements__btn__comment">
+              <div className="main__section__elements__btn__comment__pack">
+                <div className="main__section__elements__btn __comment__pack__icon">
+                  <img src={addcomment} alt="" />
+                </div>
+                <div className="main__section__elements__btn__comment__pack__text">
+                  COMMENT
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* <CommentsSection></CommentsSection> */}
       {selectedVideo.comments.map((comment) => (
         <div className="main__video__comments">
           <div className="main__video__comments__div">
@@ -89,9 +132,6 @@ function MainVideo({ props }) {
           </div>
         </div>
       ))}
-      <div>
-        <p>{selectedVideo.comments.length} Comments</p>
-      </div>
     </div>
   );
 }
