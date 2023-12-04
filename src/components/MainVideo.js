@@ -69,8 +69,10 @@ function MainVideo({ props }) {
             {selectedVideo.description}
           </p>
         </div>
-        <div>
-          <p>{selectedVideo.comments.length} Comments</p>
+        <div className="main__video__details__div">
+          <p className="main__video__details__div__length">
+            {selectedVideo.comments.length} Comments
+          </p>
         </div>
       </div>
       <div className="main__section">
@@ -89,7 +91,7 @@ function MainVideo({ props }) {
             <div>
               <form className="main__section__elements__cont__form">
                 <input
-                  className="papai"
+                  className="main__section__elements__cont__form__text"
                   type="text"
                   placeholder="Add a new comment"
                 />

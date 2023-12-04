@@ -339,9 +339,17 @@
   .main__section__elements__cont {
     justify-content: space-evenly;
   }
+  .main__section__elements__cont__form__text {
+    padding: 10px 60px 68px 10px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    font-family: "Avenir Next";
+    color: #323232;
+  }
   .main__section__div__title {
-    font-size: 16px;
-    padding: 16px 16px;
+    font-size: 14px;
+    padding: 16px 16px 6px 84px;
   }
   .main__section__elements__cont__avatar__image {
     height: 36px;
@@ -351,17 +359,19 @@
        object-fit: cover;
   }
   .main__section__elements__btn {
-    border-bottom: 0.0625rem solid #e1e1e1;
     margin: 0 auto;
-    width: 90%;
     flex-direction: row;
     justify-content: center;
     padding-top: 16px;
     padding-bottom: 16px;
   }
   .main__section__elements__btn__comment {
+    padding-right: 80px;
     height: 40px;
     width: 220px;
+  }
+  .main__section__elements__btn__comment__pack {
+    height: 40px;
   }
   .main__video__image {
     width: 20rem;
@@ -379,6 +389,13 @@
   }
   .main__video__details {
     padding: 16px;
+    font-size: 13px;
+  }
+  .main__video__details__div {
+    padding-top: 16px;
+  }
+  .main__video__details__div__length {
+    font-family: "Avenir Next Bold";
     font-size: 13px;
   }
   .main__video__details__set {
@@ -527,6 +544,7 @@
        object-fit: cover;
   }
   .main__section__div__title {
+    padding: 4px 76px;
     font-size: 12px;
   }
   .main__section__elements {
@@ -539,6 +557,13 @@
     border-radius: 50%;
     -o-object-fit: cover;
     object-fit: cover;
+  }
+  .main__section__elements__cont__form__text {
+    padding: 10px 287px 10px 10px;
+    font-size: 14px;
+    color: #323232;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
   }
   .main__section__elements__btn__comment {
     font-size: 12px;

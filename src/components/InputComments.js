@@ -20,7 +20,7 @@ function InputComments() {
               </div>
               <div>
                 <form className="main__section__elements__cont__form">
-                  <input type="text" placeholder="Add a new comment" />
+                  <input className="" type="text" placeholder="Add a new comment" />
                 </form>
               </div>
             </div>
