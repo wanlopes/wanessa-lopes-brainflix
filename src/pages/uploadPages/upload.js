@@ -1,9 +1,12 @@
 import React from "react";
-import Header from "../uploadPages/Header";
+import Header from "./Header";
+import UploadSection from "../UploadSection";
 
 function UploadPage() {
-    return (
-        <Header/>
-        <UploadSection/>
-    );
+  return (
+    <section>
+      <Header />
+      <UploadSection />
+    </section>
+  );
 }

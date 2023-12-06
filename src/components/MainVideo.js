@@ -12,7 +12,13 @@ const convertTimeStampToDate = (timestamp) => {
   return date.toLocaleDateString();
 };
 
-const retrieveVideoDetails = (id) => {
+const retrieveVideoDetails = (id, setFirstVideo) => {
+  console.log(
+    "https://project-2-api.herokuapp.com/videos/" +
+      id +
+      "?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
+  );
+  let dataApi = {};
   axios
     .get(
       "https://project-2-api.herokuapp.com/videos/" +
@@ -20,19 +26,22 @@ const retrieveVideoDetails = (id) => {
         "?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
     )
     .then((response) => {
-      return response.data;
+      console.log(response);
+      console.log(response.data);
+      dataApi = response.data;
+      setFirstVideo({ dataApi });
     })
-    .catch ((error) => {
-      console.log(error);
-    })
+    .catch((error) => {
+      console.error(error);
+    });
+  return dataApi;
 };
 
-function MainVideo({ props }) {
-  const selectedVideo = retrieveVideoDetails(props.id)(
-    (videoDetail) => videoDetail.id === props.id
-  );
+function MainVideo({ setFirstVideo, props }) {
+  const selectedVideo = retrieveVideoDetails(props.id, setFirstVideo);
   retrieveVideoDetails(props.id);
-  console.log(selectedVideo.image);
+  console.log(props.id);
+  console.log(selectedVideo);
   return (
     <div className="main__video">
       <video
