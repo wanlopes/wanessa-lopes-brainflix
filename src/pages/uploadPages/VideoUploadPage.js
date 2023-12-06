@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import UploadSection from "../UploadSection";
 
-function UploadPage() {
+function VideoUploadPage() {
   return (
     <section>
       <Header />
@@ -10,3 +10,5 @@ function UploadPage() {
     </section>
   );
 }
+
+export default VideoUploadPage;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import videoDetails from "../Data/video-details.json";
+import videoDetails from "../Data/video-details.json";
 import likes from "../assets/Icons/likes.svg";
 import views from "../assets/Icons/views.svg";
 import InputComments from "./InputComments";
@@ -12,35 +12,56 @@ const convertTimeStampToDate = (timestamp) => {
   return date.toLocaleDateString();
 };
 
-const retrieveVideoDetails = (id, setFirstVideo) => {
-  console.log(
-    "https://project-2-api.herokuapp.com/videos/" +
-      id +
-      "?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
-  );
-  let dataApi = {};
-  axios
-    .get(
-      "https://project-2-api.herokuapp.com/videos/" +
-        id +
-        "?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
-    )
-    .then((response) => {
-      console.log(response);
-      console.log(response.data);
-      dataApi = response.data;
-      setFirstVideo({ dataApi });
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-  return dataApi;
-};
+// async function retrieveVideoDetails(id, setFirstVideo) {
+//   try {
+//     let res = await axios({
+//       url:
+//         "https://project-2-api.herokuapp.com/videos/" +
+//         id +
+//         "?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f",
+//       method: "get",
+//     });
+//     if (res.status === 200) {
+//       console.log(res.status);
+//     }
+//     console.log(res.data);
+//     return res.data;
+//   } catch (err) {
+//     console.error(err);
+//   }
+// }
+
+// const retrieveVideoDetails2 = (id, setFirstVideo) => {
+//   console.log(
+//     "https://project-2-api.herokuapp.com/videos/" +
+//       id +
+//       "?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
+//   );
+//   let dataApi = {};
+//   axios
+//     .get(
+//       "https://project-2-api.herokuapp.com/videos/" +
+//         id +
+//         "?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
+//     )
+//     .then((response) => {
+//       console.log(response);
+//       console.log(response.data);
+//       dataApi = response.data;
+//       setFirstVideo({ dataApi });
+//     })
+//     .catch((error) => {
+//       console.error(error);
+//     });
+//   return dataApi;
+// };
 
 function MainVideo({ setFirstVideo, props }) {
-  const selectedVideo = retrieveVideoDetails(props.id, setFirstVideo);
-  retrieveVideoDetails(props.id);
-  console.log(props.id);
+  let dataApi = {};
+  // retrieveVideoDetails(props.id, setFirstVideo).then((res) => (dataApi = res));
+  const selectedVideo = videoDetails.find(
+    (videoDetail) => videoDetail.id === props.id
+  );
   console.log(selectedVideo);
   return (
     <div className="main__video">

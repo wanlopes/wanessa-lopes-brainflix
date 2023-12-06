@@ -43,3 +43,5 @@ function Thumbnail() {
       </div>
     );
 }
+
+export default Thumbnail;
