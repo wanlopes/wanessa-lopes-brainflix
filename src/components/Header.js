@@ -10,7 +10,9 @@ function Header() {
       <nav className="nav">
         <div className="nav__header">
           <div className="nav__header__logo">
-            <img src={logo} alt="logo" />
+            <Link to="/">
+              <img src={logo} alt="logo" />
+            </Link>
           </div>
           <div className="nav__header__ctn">
             <div className="nav__header__ctn__elements">
