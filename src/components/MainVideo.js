@@ -1,20 +1,37 @@
 import React, { useState } from "react";
-import videoDetails from "../Data/video-details.json";
+// import videoDetails from "../Data/video-details.json";
 import likes from "../assets/Icons/likes.svg";
 import views from "../assets/Icons/views.svg";
 import InputComments from "./InputComments";
 import addcomment from "../assets/Icons/add_comment.svg";
 import avatar from "../assets/Images/Mohan-muruge.jpg";
+import axios from "axios";
 
 const convertTimeStampToDate = (timestamp) => {
   let date = new Date(timestamp);
   return date.toLocaleDateString();
 };
 
+const retrieveVideoDetails = (id) => {
+  axios
+    .get(
+      "https://project-2-api.herokuapp.com/videos/" +
+        id +
+        "?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
+    )
+    .then((response) => {
+      return response.data;
+    })
+    .catch ((error) => {
+      console.log(error);
+    })
+};
+
 function MainVideo({ props }) {
-  const selectedVideo = videoDetails.find(
+  const selectedVideo = retrieveVideoDetails(props.id)(
     (videoDetail) => videoDetail.id === props.id
   );
+  retrieveVideoDetails(props.id);
   console.log(selectedVideo.image);
   return (
     <div className="main__video">
