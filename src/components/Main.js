@@ -1,7 +1,7 @@
 import Gallery from "./Gallery";
 import MainVideo from "./MainVideo";
 import { useEffect, useState } from "react";
-import videosData from "../Data/videos.json";
+// import videosData from "../Data/videos.json";
 import axios from "axios";
 // const setVideos =
 
@@ -20,13 +20,13 @@ function Main() {
         console.log(error);
       });
   }, []);
-
+  console.log({firstVideo});
   return (
     <section className="main">
       <MainVideo props={firstVideo} setFirstVideo={setFirstVideo} />
       <Gallery
-        setFirstVideo= {setFirstVideo}
-        firstVideo= {firstVideo}
+        setFirstVideo={setFirstVideo}
+        firstVideo={firstVideo}
         className="main__video__comments"
       ></Gallery>
     </section>

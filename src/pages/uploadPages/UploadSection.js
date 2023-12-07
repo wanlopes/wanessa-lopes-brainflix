@@ -1,15 +1,15 @@
 import React from "react";
 import Thumbnail from "./Thumbnail";
+import './UploadSection.css';
 
 function UploadSection() {
+  console.log("aqui");
   return (
     <div>
-      <boby>
-        <div>
-          <h1>Upload Video</h1>
+        <div className="upload">
+          <h1 className="upload__title">Upload Video</h1>
         </div>
         <Thumbnail />
-      </boby>
     </div>
   );
 }

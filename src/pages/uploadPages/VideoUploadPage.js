@@ -1,13 +1,15 @@
 import React from "react";
 import Header from "./Header";
-import UploadSection from "../UploadSection";
+import UploadSection from "./UploadSection";
 
 function VideoUploadPage() {
   return (
-    <section>
-      <Header />
-      <UploadSection />
-    </section>
+    <>
+      <section>
+        {/* <Header /> */}
+        <UploadSection />
+      </section>
+    </>
   );
 }
 

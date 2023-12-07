@@ -14,7 +14,7 @@ function Gallery({ setFirstVideo, firstVideo }) {
           {videos
             .filter((video) => video.id !== firstVideo.id)
             .map((video) => (
-              <a onClick={() => setFirstVideo(video)}>
+              <a onClick={() => setFirstVideo(video)}>  
               <VideoSumary
                 // onClick={() => setFirstVideo(video)}
                 key={video.id}
