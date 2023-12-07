@@ -14,4 +14,34 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+.upload__title {
+  color: #323232;
+  font-family: "Avenir Next";
+}
+
+@media (max-width: 320px) {
+  .upload {
+    padding: 16px;
+  }
+  .upload__title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .upload {
+    padding: 36px;
+  }
+  .upload__title {
+    font-size: 33px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .upload {
+    padding: 36px 100px;
+  }
+  .upload__title {
+    font-size: 33px;
+  }
 }/*# sourceMappingURL=UploadSection.css.map */

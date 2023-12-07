@@ -1,1 +1,40 @@
 @use "../../styles/partials/global" as *;
+
+.upload {
+  &__title {
+    color: $brainflix-black;
+    font-family: $primary-normal;
+  }
+}
+.thumbnail {
+}
+
+//MOBILE
+@media (max-width: $mobile-screen-min-size) {
+  .upload {
+    padding: $headline-padding-after-mobile;
+    &__title {
+      font-size: $page-header-text-size-mobile;
+    }
+  }
+}
+
+//TABLET
+@media (min-width: $tablet-screen-min-size) and (max-width: $tablet-screen-max-size) {
+  .upload {
+    padding: $headline-padding-after-desktop;
+    &__title {
+      font-size: $page-header-text-size-desktop;
+    }
+  }
+}
+
+//DESKTOP 
+@media (min-width: $desktop-screen-min-size) and (max-width: $desktop-screen-max-size) {
+    .upload {
+        padding: $headline-padding-after-desktop 100px;
+    &__title {
+        font-size: $page-header-text-size-desktop;
+    }
+  }
+}
