@@ -21,12 +21,60 @@
   font-family: "Avenir Next";
 }
 
+.thumbnail__title__name {
+  color: #afafaf;
+}
+.thumbnail__container__image {
+  border-radius: 4px;
+}
+
+.form__container__title__name {
+  color: #afafaf;
+}
+.form__division__tag__placeholder {
+  color: #323232;
+  border: 1px solid #e1e1e1;
+  border: 4px;
+  background-color: #fafafa;
+}
+
+input {
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
 @media (max-width: 320px) {
   .upload {
     padding: 16px;
   }
   .upload__title {
     font-size: 24px;
+  }
+  .thumbnail__title {
+    padding: 16px;
+  }
+  .thumbnail__title__name {
+    font-size: 14px;
+  }
+  .thumbnail__container__image {
+    border-radius: 4px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 290px;
+    padding: 0 16px;
+  }
+  .form__container__title {
+    padding: 16px 0 10px 16px;
+  }
+  .form__container__title__name {
+    font-size: 14px;
+  }
+  .form__division__tag {
+    padding: 10px 200px 10px 16px;
+  }
+  .form__division__tag__placeholder {
+    padding: 10px 200px 10px 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -36,6 +84,12 @@
   .upload__title {
     font-size: 33px;
   }
+  .thumbnail__title {
+    padding: 24px 36px;
+  }
+  .thumbnail__title__name {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
   .upload {
@@ -43,5 +97,11 @@
   }
   .upload__title {
     font-size: 33px;
+  }
+  .thumbnail__title {
+    padding: 36px 100px;
+  }
+  .thumbnail__title__name {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=UploadSection.css.map */

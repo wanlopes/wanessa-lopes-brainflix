@@ -7,6 +7,40 @@
   }
 }
 .thumbnail {
+  &__title {
+    &__name {
+      color: $silver;
+    }
+  }
+  &__container {
+    &__image {
+      border-radius: 4px;
+    }
+  }
+}
+.form {
+  &__container {
+    &__title {
+      &__name {
+        color: $silver;
+      }
+    }
+  }
+  &__division {
+    &__tag {
+      &__placeholder {
+        color: $brainflix-black;
+        border: 1px solid $mercury;
+        border: 4px;
+        background-color: $alabaster;
+      }
+    }
+  }
+}
+input {
+  border: 1px solid $mercury;
+  border-radius: 4px;
+  background-color: $alabaster;
 }
 
 //MOBILE
@@ -15,6 +49,40 @@
     padding: $headline-padding-after-mobile;
     &__title {
       font-size: $page-header-text-size-mobile;
+    }
+  }
+  .thumbnail {
+    &__title {
+      padding: $headline-padding-after-mobile;
+      &__name {
+        font-size: $subheader-text-size-desktop;
+      }
+    }
+    &__container {
+      &__image {
+        border-radius: 4px;
+        object-fit: cover;
+        width: 290px;
+        padding: 0 16px;
+      }
+    }
+  }
+  .form {
+    &__container {
+      &__title {
+        padding: 16px 0 10px 16px;
+        &__name {
+          font-size: $subheader-text-size-desktop;
+        }
+      }
+    }
+    &__division {
+      &__tag {
+        padding: 10px 200px 10px 16px;
+        &__placeholder {
+          padding: 10px 200px 10px 16px;
+        }
+      }
     }
   }
 }
@@ -27,14 +95,30 @@
       font-size: $page-header-text-size-desktop;
     }
   }
+  .thumbnail {
+    &__title {
+      padding: $headline-padding-before-mobile $headline-padding-after-desktop;
+      &__name {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
-//DESKTOP 
+//DESKTOP
 @media (min-width: $desktop-screen-min-size) and (max-width: $desktop-screen-max-size) {
-    .upload {
-        padding: $headline-padding-after-desktop 100px;
+  .upload {
+    padding: $headline-padding-after-desktop 100px;
     &__title {
-        font-size: $page-header-text-size-desktop;
+      font-size: $page-header-text-size-desktop;
+    }
+  }
+  .thumbnail {
+    &__title {
+      padding: $headline-padding-after-desktop 100px;
+      &__name {
+        font-size: 16px;
+      }
     }
   }
 }

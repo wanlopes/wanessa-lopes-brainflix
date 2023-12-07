@@ -1,6 +1,7 @@
 import React from "react";
 import Thumbnail from "./Thumbnail";
 import './UploadSection.css';
+import './Thumbnail.css';
 
 function UploadSection() {
   console.log("aqui");
