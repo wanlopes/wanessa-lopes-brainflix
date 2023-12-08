@@ -13,7 +13,7 @@ function Thumbnail() {
           <img
             className="thumbnail__container__image"
             src={thumbnailimage}
-            alt="thumnail-image"
+            alt="thumnailimage"
           />
         </div>
       </div>
@@ -34,23 +34,28 @@ function Thumbnail() {
         </div>
       </div>
       <div className="subdivision">
-        <div className="subdivision__container">
-          <h2 className="subdivision__container__name">ADD A VIDEO DESCRIPTION</h2>
+        <div className="subdivision__title">
+          <h2 className="subdivision__title__name">
+            ADD A VIDEO DESCRIPTION
+          </h2>
         </div>
-        <div>
-          <form>
+        <div className="subdivision__container">
+          <form className="subdivision__container__form">
             <input
+              className="subdivision__container__form__placeholder"
               type="text"
               placeholder="Add a description to your video"
             ></input>
           </form>
         </div>
       </div>
-      <div>
-        <button>PUBLISH</button>
-      </div>
-      <div>
-        <button>CANCEL</button>
+      <div className="buttons">
+        <div className="buttons__first">
+          <button className="buttons__first__name">PUBLISH</button>
+        </div>
+        <div className="buttons__second">
+          <button className="buttons__second__name">CANCEL</button>
+        </div>
       </div>
     </div>
   );

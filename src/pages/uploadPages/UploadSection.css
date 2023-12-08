@@ -34,14 +34,33 @@
 .form__division__tag__placeholder {
   color: #323232;
   border: 1px solid #e1e1e1;
-  border: 4px;
+  border-radius: 4px;
   background-color: #fafafa;
 }
 
-input {
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
+.subdivision__title__name {
+  color: #afafaf;
+}
+.subdivision__container__form__placeholder {
   background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  color: #323232;
+}
+
+.buttons {
+  display: flex;
+}
+.buttons__first__name {
+  border: none;
+  color: #ffffff;
+  background-color: #0095FF;
+  border-radius: 4px;
+}
+.buttons__second__name {
+  border: none;
+  color: #0095FF;
+  background-color: #ffffff;
+  border-radius: 4px;
 }
 
 @media (max-width: 320px) {
@@ -77,6 +96,26 @@ input {
     padding: 10px 200px 10px 16px;
   }
 }
+.buttons {
+  flex-direction: column;
+}
+.buttons__first {
+  padding: 16px 15px;
+}
+.buttons__first__name {
+  font-size: 12px;
+  width: 280px;
+  height: 45px;
+}
+.buttons__second {
+  padding: 10px 15px;
+}
+.buttons__second__name {
+  font-size: 12px;
+  width: 280px;
+  height: 45px;
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .upload {
     padding: 36px;
@@ -85,10 +124,40 @@ input {
     font-size: 33px;
   }
   .thumbnail__title {
-    padding: 24px 36px;
+    padding: 24px 36px 10px 36px;
   }
   .thumbnail__title__name {
     font-size: 16px;
+  }
+  .thumbnail__container {
+    padding: 0 36px;
+  }
+  .thumbnail__container__image {
+    border-radius: 4px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 200px;
+    width: 350px;
+  }
+  .buttons {
+    padding: 24px;
+    flex-direction: row-reverse;
+  }
+  .buttons__first {
+    padding: 16px;
+  }
+  .buttons__first__name {
+    font-size: 13px;
+    width: 180px;
+    height: 45px;
+  }
+  .buttons__second {
+    padding: 10px 15px;
+  }
+  .buttons__second__name {
+    font-size: 13px;
+    width: 150px;
+    height: 45px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1920px) {
@@ -103,5 +172,57 @@ input {
   }
   .thumbnail__title__name {
     font-size: 16px;
+  }
+  .thumbnail__container {
+    padding: 0 36px 10px 100px;
+  }
+  .thumbnail__container__image {
+    border-radius: 4px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 195px;
+    width: 365px;
+  }
+  .form__container__title {
+    padding: 16px 0 10px 16px;
+  }
+  .form__container__title__name {
+    font-size: 14px;
+  }
+  .form__division__tag__placeholder {
+    font-size: 14px;
+    color: #323232;
+    width: 600px;
+  }
+  .subdivision__title__name {
+    font-size: 14px;
+    color: #afafaf;
+  }
+  .subdivision__container__form__placeholder {
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    color: #323232;
+    width: 600px;
+    height: 90px;
+  }
+  .buttons {
+    padding: 24px;
+    flex-direction: row-reverse;
+  }
+  .buttons__first {
+    padding: 16px;
+  }
+  .buttons__first__name {
+    font-size: 13px;
+    width: 180px;
+    height: 45px;
+  }
+  .buttons__second {
+    padding: 10px 15px;
+  }
+  .buttons__second__name {
+    font-size: 13px;
+    width: 150px;
+    height: 45px;
   }
 }/*# sourceMappingURL=UploadSection.css.map */
