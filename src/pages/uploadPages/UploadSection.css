@@ -118,10 +118,16 @@
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .upload {
-    padding: 36px;
+    padding: 0 36px;
   }
   .upload__title {
     font-size: 33px;
+  }
+  .upload-line {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 12px 0;
+    width: 92%;
+    margin: auto;
   }
   .thumbnail__title {
     padding: 24px 36px 10px 36px;
@@ -138,6 +144,47 @@
        object-fit: cover;
     height: 200px;
     width: 350px;
+  }
+  .form__container__title {
+    padding: 16px 0 6px 36px;
+  }
+  .form__container__title__name {
+    font-size: 14px;
+  }
+  .form__container__division__tag {
+    padding: 0 36px;
+  }
+  .form__container__division__tag__placeholder {
+    font-size: 14px;
+    color: #323232;
+    width: 700px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    background-color: #fafafa;
+  }
+  .subdivision__title {
+    padding: 10px 0 6px 36px;
+  }
+  .subdivision__title__name {
+    font-size: 14px;
+    color: #afafaf;
+  }
+  .subdivision__container__form {
+    padding: 0 36px;
+  }
+  .subdivision__container__form__placeholder {
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    color: #323232;
+    width: 700px;
+    height: 90px;
+  }
+  .bottom-line {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 16px 0;
+    width: 92%;
+    margin: auto;
   }
   .buttons {
     padding: 24px;
@@ -189,10 +236,14 @@
   .form__container__title__name {
     font-size: 14px;
   }
-  .form__division__tag__placeholder {
+  .form__container__division__tag__placeholder {
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
     font-size: 14px;
     color: #323232;
     width: 600px;
+    height: 40px;
   }
   .subdivision__title__name {
     font-size: 14px;

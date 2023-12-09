@@ -49,6 +49,7 @@ function Thumbnail() {
           </form>
         </div>
       </div>
+      <div className="bottom-line"></div>
       <div className="buttons">
         <div className="buttons__first">
           <button className="buttons__first__name">PUBLISH</button>
