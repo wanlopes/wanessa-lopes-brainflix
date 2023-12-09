@@ -519,7 +519,7 @@
     height: 1.5625rem;
     padding: 1.625rem 2.125rem;
   }
-  input {
+  .main__section__elements__cont__form__input {
     font-family: "Avenir Next";
     color: #323232;
     font-size: 12px;
@@ -689,7 +689,7 @@
   .nav__header__logo {
     padding: 1.875rem 8.125rem;
   }
-  input {
+  .main__section__elements__cont__form__input {
     font-family: "Avenir Next";
     color: #323232;
     font-size: 0.75rem;
