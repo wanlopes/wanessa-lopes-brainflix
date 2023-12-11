@@ -1,5 +1,8 @@
 @use "../../styles/partials/global" as *;
 
+.upper-line {
+  border: 1px solid $mercury;
+}
 .upload {
   &__title {
     color: $brainflix-black;
@@ -83,7 +86,8 @@
   }
   .thumbnail {
     &__title {
-      padding: $headline-padding-after-mobile;
+      padding: $headline-padding-after-mobile $headline-padding-after-mobile 6px
+        $headline-padding-after-mobile;
       &__name {
         font-size: $subheader-text-size-desktop;
       }
@@ -99,18 +103,42 @@
   }
   .form {
     &__container {
+      padding: 16px;
       &__title {
-        padding: 16px 0 10px 16px;
+        padding: 6px 0;
         &__name {
           font-size: $subheader-text-size-desktop;
         }
       }
+      &__division {
+        &__tag {
+          &__placeholder {
+            padding: 0 10px;
+            width: 270px;
+            height: 40px;
+            border: 1px solid $mercury;
+            background-color: $alabaster;
+          }
+        }
+      }
     }
-    &__division {
-      &__tag {
-        padding: 10px 200px 10px 16px;
+  }
+  .subdivision {
+    padding: 0 16px;
+    &__title {
+      &__name {
+        font-size: $body-text-size-mobile;
+      }
+    }
+    &__container {
+      &__form {
         &__placeholder {
-          padding: 10px 200px 10px 16px;
+          font-size: $body-text-size-mobile;
+          color: $brainflix-black;
+          height: 90px;
+          width: 270px;
+          border: 1px solid $mercury;
+          background-color: $alabaster;
         }
       }
     }
@@ -139,7 +167,8 @@
 //TABLET
 @media (min-width: $tablet-screen-min-size) and (max-width: $tablet-screen-max-size) {
   .upload {
-    padding: 0 $headline-padding-after-desktop;
+    padding: $headline-padding-after-desktop $headline-padding-after-desktop 0px
+      $headline-padding-after-desktop;
     &__title {
       font-size: $page-header-text-size-desktop;
     }
@@ -249,6 +278,7 @@
       font-size: $page-header-text-size-desktop;
     }
   }
+
   .thumbnail {
     &__title {
       padding: $headline-padding-after-desktop 100px;
@@ -307,6 +337,10 @@
         }
       }
     }
+  }
+  input::placeholder {
+    color: $brainflix-black;
+    font-size: $body-text-size-desktop;
   }
   .buttons {
     padding: 24px;

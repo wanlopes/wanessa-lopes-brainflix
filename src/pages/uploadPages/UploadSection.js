@@ -7,6 +7,7 @@ function UploadSection() {
   console.log("aqui");
   return (
     <div>
+        <div className="upper-line"></div>
         <div className="upload">
           <h1 className="upload__title">Upload Video</h1>
         </div>

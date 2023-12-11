@@ -16,6 +16,10 @@
   padding: 0;
 }
 
+.upper-line {
+  border: 1px solid #e1e1e1;
+}
+
 .upload__title {
   color: #323232;
   font-family: "Avenir Next";
@@ -71,7 +75,7 @@
     font-size: 24px;
   }
   .thumbnail__title {
-    padding: 16px;
+    padding: 16px 16px 6px 16px;
   }
   .thumbnail__title__name {
     font-size: 14px;
@@ -83,17 +87,35 @@
     width: 290px;
     padding: 0 16px;
   }
+  .form__container {
+    padding: 16px;
+  }
   .form__container__title {
-    padding: 16px 0 10px 16px;
+    padding: 6px 0;
   }
   .form__container__title__name {
     font-size: 14px;
   }
-  .form__division__tag {
-    padding: 10px 200px 10px 16px;
+  .form__container__division__tag__placeholder {
+    padding: 0 10px;
+    width: 270px;
+    height: 40px;
+    border: 1px solid #e1e1e1;
+    background-color: #fafafa;
   }
-  .form__division__tag__placeholder {
-    padding: 10px 200px 10px 16px;
+  .subdivision {
+    padding: 0 16px;
+  }
+  .subdivision__title__name {
+    font-size: 13px;
+  }
+  .subdivision__container__form__placeholder {
+    font-size: 13px;
+    color: #323232;
+    height: 90px;
+    width: 270px;
+    border: 1px solid #e1e1e1;
+    background-color: #fafafa;
   }
 }
 .buttons {
@@ -118,7 +140,7 @@
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .upload {
-    padding: 0 36px;
+    padding: 36px 36px 0px 36px;
   }
   .upload__title {
     font-size: 33px;
@@ -255,6 +277,14 @@
     color: #323232;
     width: 600px;
     height: 90px;
+  }
+  input::-moz-placeholder {
+    color: #323232;
+    font-size: 14px;
+  }
+  input::placeholder {
+    color: #323232;
+    font-size: 14px;
   }
   .buttons {
     padding: 24px;
