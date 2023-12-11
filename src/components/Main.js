@@ -1,9 +1,7 @@
 import Gallery from "./Gallery";
 import MainVideo from "./MainVideo";
 import { useEffect, useState } from "react";
-// import videosData from "../Data/videos.json";
 import axios from "axios";
-// const setVideos =
 
 function Main() {
   const defaultVideo = { id: "84e96018-4022-434e-80bf-000ce4cd12b8" };
@@ -20,7 +18,6 @@ function Main() {
         console.log(error);
       });
   }, []);
-  console.log({firstVideo});
   return (
     <section className="main">
       <MainVideo props={firstVideo} setFirstVideo={setFirstVideo} />
