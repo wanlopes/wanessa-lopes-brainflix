@@ -124,10 +124,21 @@
 .buttons__first {
   padding: 16px 15px;
 }
-.buttons__first__name {
-  font-size: 12px;
-  width: 280px;
+.buttons__first__content {
+  border-radius: 4px;
+  border: none;
+  background-color: #0095FF;
+  width: 200px;
   height: 45px;
+}
+.buttons__first__content__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.buttons__first__content__wrap__publish {
+  color: #ffffff;
+  font-size: 12px;
 }
 .buttons__second {
   padding: 10px 15px;
@@ -235,6 +246,11 @@
   }
   .upload__title {
     font-size: 33px;
+  }
+  .upload-line {
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid #e1e1e1;
   }
   .thumbnail__title {
     padding: 36px 100px;

@@ -1,6 +1,7 @@
 import React from "react";
 import thumbnailimage from "../../assets/Images/Upload-video-preview.jpg";
 import "./Thumbnail.css";
+import upload from "../../assets/Icons/upload.svg"
 
 function Thumbnail() {
   return (
@@ -35,9 +36,7 @@ function Thumbnail() {
       </div>
       <div className="subdivision">
         <div className="subdivision__title">
-          <h2 className="subdivision__title__name">
-            ADD A VIDEO DESCRIPTION
-          </h2>
+          <h2 className="subdivision__title__name">ADD A VIDEO DESCRIPTION</h2>
         </div>
         <div className="subdivision__container">
           <form className="subdivision__container__form">
@@ -52,7 +51,14 @@ function Thumbnail() {
       <div className="bottom-line"></div>
       <div className="buttons">
         <div className="buttons__first">
-          <button className="buttons__first__name">PUBLISH</button>
+          <button className="buttons__first__content">
+            <div className="buttons__first__content__wrap">
+              <div className="buttons__first__content__wrap__icon">
+                <img src={upload} alt="icon" />
+              </div>
+              <div className="buttons__first__content__wrap__publish">PUBLISH</div>
+            </div>
+          </button>
         </div>
         <div className="buttons__second">
           <button className="buttons__second__name">CANCEL</button>

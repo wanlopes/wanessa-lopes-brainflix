@@ -148,10 +148,27 @@
   flex-direction: column;
   &__first {
     padding: 16px 15px;
-    &__name {
-      font-size: 12px;
-      width: 280px;
+    &__content {
+      border-radius: 4px;
+      border: none;
+      background-color: $brainflix-blue;
+      width: 200px;
       height: 45px;
+      &__wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // justify-content: center;
+        &__icon {
+          padding-left: 5px;
+          padding-right: 50px;
+        }
+      }
+        &__publish {
+          color: $white;
+          font-size: 12px;
+        }
+      }
     }
   }
   &__second {
@@ -278,7 +295,11 @@
       font-size: $page-header-text-size-desktop;
     }
   }
-
+  .upload-line {
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid $mercury;
+  }
   .thumbnail {
     &__title {
       padding: $headline-padding-after-desktop 100px;
