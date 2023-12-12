@@ -127,7 +127,7 @@ function MainVideo({ setFirstVideo, props }) {
           </div>
         </div>
         {videoDetails.comments.map((comment) => (
-          <div className="main__video__comments">
+          <div key={comment.id} className="main__video__comments">
             <div className="main__video__comments__div">
               <div className="main__video__comments__div__placeholder"></div>
             </div>
@@ -144,6 +144,7 @@ function MainVideo({ setFirstVideo, props }) {
               <p className="main__video__comments__items__comment">
                 {comment.comment}
               </p>
+              <div className="main__video__comments__items__line"></div>
             </div>
           </div>
         ))}
