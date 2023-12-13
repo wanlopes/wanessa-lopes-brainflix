@@ -195,11 +195,12 @@
 .main__section__elements__cont {
   display: flex;
 }
-.main__section__elements__cont__form__text {
+.main__section__elements__cont__form__input {
+  color: #323232;
+  outline: none;
   border: 1px solid #e1e1e1;
 }
-.main__section__elements__cont__form:focus {
-  outline: none;
+.main__section__elements__cont__form__input:focus {
   border: 1px solid #0095FF;
 }
 .main__section__elements__btn {
@@ -580,8 +581,11 @@
     -o-object-fit: cover;
     object-fit: cover;
   }
+  .main__section__elements__cont__form {
+    padding-left: 16px;
+  }
   .main__section__elements__cont__form__text {
-    padding: 10px 287px 10px 10px;
+    padding: 10px 250px 10px 10px;
     font-size: 14px;
     color: #323232;
     border: 1px solid #e1e1e1;
@@ -811,6 +815,12 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  .main__section__elements__cont {
+    padding-left: 66px;
+  }
+  .main__section__elements__cont__form {
+    padding-left: 24px;
+  }
   .main__section__elements__btn {
     padding-left: 0.3125rem;
   }
@@ -830,7 +840,7 @@
     object-fit: cover;
   }
   .main__section__elements__cont__form__text {
-    padding: 1px 180px 0px 10px;
+    padding: 10px 180px 14px 10px;
     font-size: "Avenir Next";
     color: #323232;
     background-color: #fafafa;

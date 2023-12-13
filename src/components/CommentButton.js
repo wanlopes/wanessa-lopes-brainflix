@@ -4,12 +4,12 @@ function CommentButton () {
     return (
       <div className="main__section__elements__btn">
         <button className="main__section__elements__btn__comment">
-            <div className="main__section__elements__btn __comment__icon">
-                <img src={addcomment} alt="" />
-            </div>
-            <div className="main__section__elements__btn__comment__text">
-                COMMENT
-            </div>
+          <div className="main__section__elements__btn __comment__icon">
+            <img src={addcomment} alt="" />
+          </div>
+          <div className="main__section__elements__btn__comment__text">
+            COMMENT
+          </div>
         </button>
       </div>
     ); 

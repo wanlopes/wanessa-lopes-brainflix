@@ -21,6 +21,7 @@ function MainVideo({ setFirstVideo, props }) {
       )
       .then((response) => {
         setVideoDetails(response.data);
+        console.log(response.data);
       })
       .catch((error) => {
         console.error(error);

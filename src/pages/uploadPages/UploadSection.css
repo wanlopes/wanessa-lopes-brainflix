@@ -106,10 +106,14 @@
   .subdivision {
     padding: 0 16px;
   }
+  .subdivision__title {
+    padding: 6px 0;
+  }
   .subdivision__title__name {
     font-size: 13px;
   }
   .subdivision__container__form__placeholder {
+    padding: 0px 10px;
     font-size: 13px;
     color: #323232;
     height: 90px;
@@ -122,19 +126,23 @@
   flex-direction: column;
 }
 .buttons__first {
-  padding: 16px 15px;
+  padding: 16px 20px 10px 20px;
 }
 .buttons__first__content {
   border-radius: 4px;
   border: none;
   background-color: #0095FF;
-  width: 200px;
+  width: 280px;
   height: 45px;
 }
 .buttons__first__content__wrap {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.buttons__first__content__wrap__icon {
+  padding-left: 10px;
+  padding-right: 75px;
 }
 .buttons__first__content__wrap__publish {
   color: #ffffff;
@@ -197,7 +205,7 @@
     background-color: #fafafa;
   }
   .subdivision__title {
-    padding: 10px 0 6px 36px;
+    padding: 16px 0px 6px 36px;
   }
   .subdivision__title__name {
     font-size: 14px;
@@ -226,10 +234,16 @@
   .buttons__first {
     padding: 16px;
   }
-  .buttons__first__name {
-    font-size: 13px;
+  .buttons__first__content {
     width: 180px;
     height: 45px;
+  }
+  .buttons__first__content__wrap__icon {
+    padding-left: 10px;
+    padding-right: 32px;
+  }
+  .buttons__first__content__wrap__publish {
+    font-size: 13px;
   }
   .buttons__second {
     padding: 10px 15px;
@@ -309,10 +323,16 @@
   .buttons__first {
     padding: 16px;
   }
-  .buttons__first__name {
-    font-size: 13px;
+  .buttons__first__content {
     width: 180px;
     height: 45px;
+  }
+  .buttons__first__content__wrap__icon {
+    padding-left: 10px;
+    padding-right: 32px;
+  }
+  .buttons__first__content__wrap__publish {
+    font-size: 13px;
   }
   .buttons__second {
     padding: 10px 15px;
