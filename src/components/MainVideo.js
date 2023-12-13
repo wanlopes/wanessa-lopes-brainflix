@@ -116,7 +116,7 @@ function MainVideo({ setFirstVideo, props }) {
             <div className="main__section__elements__btn">
               <button className="main__section__elements__btn__comment">
                 <div className="main__section__elements__btn__comment__pack">
-                  <div className="main__section__elements__btn __comment__pack__icon">
+                  <div className="main__section__elements__btn__comment__pack__icon">
                     <img src={addcomment} alt="" />
                   </div>
                   <div className="main__section__elements__btn__comment__pack__text">
