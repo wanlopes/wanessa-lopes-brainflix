@@ -1,5 +1,6 @@
 import VideoSumary from "./VideoSumary";
 import videosData from "../Data/videos.json";
+import { Link } from "react-router-dom";
 
 function Gallery({ setFirstVideo, firstVideo }) {
   const videos = videosData;

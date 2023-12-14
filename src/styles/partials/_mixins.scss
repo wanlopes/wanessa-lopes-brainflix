@@ -1,11 +1,29 @@
 @mixin placeholder-style {
-  background-color: $mercury; 
-  border-radius: 50%; 
+  color: $brainflix-black;
+    border: 1px solid $mercury;
+    border-radius: 4px;
+    background-color: $alabaster;
 }
 
 @mixin avatar-style($width, $height, $border-radius) {
   display: flex;
   width: $width; 
   height: $height;
-  border-radius: $border-radius; 
+  border-radius: 50%; 
+}
+
+@mixin image-style {
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+@mixin button-style {
+  color: $brainflix-blue;
+  background-color: $white;
+  border-radius: 4px;
+}
+
+@mixin placeholder-avatar {
+  background-color: $mercury;
+  border-radius: 50%;
 }

@@ -126,6 +126,7 @@ function MainVideo({ setFirstVideo, props }) {
               </button>
             </div>
           </div>
+          <div className="main__section__line"></div>
         </div>
         {videoDetails.comments.map((comment) => (
           <div key={comment.id} className="main__video__comments">
