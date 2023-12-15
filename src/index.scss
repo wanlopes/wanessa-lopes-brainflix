@@ -852,7 +852,7 @@
     display: flex;
     width: 50%;
     padding: $headline-padding-after-mobile $headline-padding-after-mobile
-    $headline-padding-after-mobile 7.125rem;
+      $headline-padding-after-mobile 7.125rem;
   }
   .main__video__comments__items {
     display: flex;
@@ -873,9 +873,10 @@
     font-size: $body-text-size-desktop;
     line-height: $body-line-height-desktop;
   }
-  // .main__video__comments__items__comment__line {
-  //   border-bottom: 1px solid $mercury;
-  // }
+  .main__video__comments__items__line {
+    padding: 8px;
+    border-bottom: 1px solid $mercury;
+  }
   .main__section {
     width: 68%;
   }

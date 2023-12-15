@@ -3,7 +3,8 @@ import Thumbnail from "./Thumbnail";
 import './UploadSection.css';
 import './Thumbnail.css';
 
-function UploadSection() {
+
+function UploadSection({ handleFormSubmission }) {
   console.log("aqui");
   return (
     <div>

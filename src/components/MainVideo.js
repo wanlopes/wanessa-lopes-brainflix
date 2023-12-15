@@ -5,6 +5,7 @@ import InputComments from "./InputComments";
 import addcomment from "../assets/Icons/add_comment.svg";
 import avatar from "../assets/Images/Mohan-muruge.jpg";
 import axios from "axios";
+// import InputComments from "./InputComments";
 
 const convertTimeStampToDate = (timestamp) => {
   let date = new Date(timestamp);
@@ -90,7 +91,7 @@ function MainVideo({ setFirstVideo, props }) {
             </p>
           </div>
         </div>
-        <div className="main__section">
+        {/* <div className="main__section">
           <div className="main__section__div">
             <h2 className="main__section__div__title">JOIN THE CONVERSATION</h2>
           </div>
@@ -127,7 +128,8 @@ function MainVideo({ setFirstVideo, props }) {
             </div>
           </div>
           <div className="main__section__line"></div>
-        </div>
+        </div> */}
+        <InputComments />
         {videoDetails.comments.map((comment) => (
           <div key={comment.id} className="main__video__comments">
             <div className="main__video__comments__div">
@@ -150,6 +152,7 @@ function MainVideo({ setFirstVideo, props }) {
             </div>
           </div>
         ))}
+        <div className="main__video__line"></div>
       </div>
     );
   }

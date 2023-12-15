@@ -3,7 +3,7 @@ import thumbnailimage from "../../assets/Images/Upload-video-preview.jpg";
 import "./Thumbnail.css";
 import upload from "../../assets/Icons/upload.svg"
 
-function Thumbnail() {
+function Thumbnail({ handleFormSubmission }) {
   return (
     <div>
       <div className="thumbnail">
@@ -39,7 +39,10 @@ function Thumbnail() {
           <h2 className="subdivision__title__name">ADD A VIDEO DESCRIPTION</h2>
         </div>
         <div className="subdivision__container">
-          <form className="subdivision__container__form">
+          <form
+            className="subdivision__container__form"
+            onSubmit={handleFormSubmission}
+          >
             <input
               className="subdivision__container__form__placeholder"
               type="text"
@@ -51,12 +54,14 @@ function Thumbnail() {
       <div className="bottom-line"></div>
       <div className="buttons">
         <div className="buttons__first">
-          <button className="buttons__first__content">
+          <button className="buttons__first__content" type="submit">
             <div className="buttons__first__content__wrap">
               <div className="buttons__first__content__wrap__icon">
                 <img src={upload} alt="icon" />
               </div>
-              <div className="buttons__first__content__wrap__publish">PUBLISH</div>
+              <div className="buttons__first__content__wrap__publish">
+                PUBLISH
+              </div>
             </div>
           </button>
         </div>

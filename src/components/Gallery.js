@@ -1,9 +1,26 @@
 import VideoSumary from "./VideoSumary";
-import videosData from "../Data/videos.json";
+// import videosData from "../Data/videos.json";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 function Gallery({ setFirstVideo, firstVideo }) {
-  const videos = videosData;
+  // const videos = videosData;
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://project-2-api.herokuapp.com/videos?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
+      )
+      .then((response) => {
+        setVideos(response.data);
+        console.log("papai noel");
+      })
+      .catch((error) => {
+        console.error("Error fetching videos: ", error);
+      });
+  }, []);
 
   return (
     <aside className="gallery">
@@ -15,15 +32,14 @@ function Gallery({ setFirstVideo, firstVideo }) {
           {videos
             .filter((video) => video.id !== firstVideo.id)
             .map((video) => (
-              <a onClick={() => setFirstVideo(video)}>  
-              <VideoSumary
-                // onClick={() => setFirstVideo(video)}
-                key={video.id}
-                id={video.id}
-                title={video.title}
-                channel={video.channel}
-                image={video.image}
-              />
+              <a onClick={() => setFirstVideo(video)}>
+                <VideoSumary
+                  key={video.id}
+                  id={video.id}
+                  title={video.title}
+                  channel={video.channel}
+                  image={video.image}
+                />
               </a>
             ))}
         </div>

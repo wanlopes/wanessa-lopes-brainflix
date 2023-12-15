@@ -845,6 +845,10 @@
     font-size: 14px;
     line-height: 22px;
   }
+  .main__video__comments__items__line {
+    padding: 8px;
+    border-bottom: 1px solid #e1e1e1;
+  }
   .main__section {
     width: 68%;
   }
