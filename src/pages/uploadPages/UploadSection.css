@@ -1,13 +1,12 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Avenir Next Bold";
-  src: url("C:Þv\brainstationwanessa-lopes-brainflixsrc\assets\font\avenirNextLTPro-Bold.otf");
+  src: url(../../../src/assets/Font/AvenirNextLTPro-Bold.otf);
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir Next";
-  src: url("C:Þv\brainstationwanessa-lopes-brainflixsrc\assets\font\avenirNextLTPro-Regular.otf");
+  src: url(../../../src/assets/Font/AvenirNextLTPro-Regular.otf);
   font-weight: 400;
   font-style: normal;
 }
@@ -25,27 +24,25 @@
   font-family: "Avenir Next";
 }
 
-.thumbnail__title__name {
+.block__thumbnail__title__name {
   color: #afafaf;
 }
-.thumbnail__container__image {
+.block__thumbnail__container__image {
   border-radius: 4px;
 }
-
-.form__container__title__name {
+.block__wrapper__form__container__title__name {
   color: #afafaf;
 }
-.form__division__tag__placeholder {
+.block__wrapper__form__division__tag__placeholder {
   color: #323232;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
   background-color: #fafafa;
 }
-
-.subdivision__title__name {
+.block__wrapper__subdivision__title__name {
   color: #afafaf;
 }
-.subdivision__container__form__placeholder {
+.block__wrapper__subdivision__container__form__placeholder {
   background-color: #fafafa;
   border: 1px solid #e1e1e1;
   color: #323232;
@@ -74,45 +71,45 @@
   .upload__title {
     font-size: 24px;
   }
-  .thumbnail__title {
+  .block__thumbnail__title {
     padding: 16px 16px 6px 16px;
   }
-  .thumbnail__title__name {
+  .block__thumbnail__title__name {
     font-size: 14px;
   }
-  .thumbnail__container__image {
+  .block__thumbnail__container__image {
     border-radius: 4px;
     -o-object-fit: cover;
        object-fit: cover;
     width: 290px;
     padding: 0 16px;
   }
-  .form__container {
+  .block__wrapper__form__container {
     padding: 16px;
   }
-  .form__container__title {
+  .block__wrapper__form__container__title {
     padding: 6px 0;
   }
-  .form__container__title__name {
+  .block__wrapper__form__container__title__name {
     font-size: 14px;
   }
-  .form__container__division__tag__placeholder {
+  .block__wrapper__form__container__division__tag__placeholder {
     padding: 0 10px;
     width: 270px;
     height: 40px;
     border: 1px solid #e1e1e1;
     background-color: #fafafa;
   }
-  .subdivision {
+  .block__wrapper__subdivision {
     padding: 0 16px;
   }
-  .subdivision__title {
+  .block__wrapper__subdivision__title {
     padding: 6px 0;
   }
-  .subdivision__title__name {
+  .block__wrapper__subdivision__title__name {
     font-size: 13px;
   }
-  .subdivision__container__form__placeholder {
+  .block__wrapper__subdivision__container__form__placeholder {
     padding: 0px 10px;
     font-size: 13px;
     color: #323232;
@@ -170,32 +167,32 @@
     width: 92%;
     margin: auto;
   }
-  .thumbnail__title {
+  .block__thumbnail__title {
     padding: 24px 36px 10px 36px;
   }
-  .thumbnail__title__name {
+  .block__thumbnail__title__name {
     font-size: 16px;
   }
-  .thumbnail__container {
+  .block__thumbnail__container {
     padding: 0 36px;
   }
-  .thumbnail__container__image {
+  .block__thumbnail__container__image {
     border-radius: 4px;
     -o-object-fit: cover;
        object-fit: cover;
     height: 200px;
     width: 350px;
   }
-  .form__container__title {
+  .block__wrapper__form__container__title {
     padding: 16px 0 6px 36px;
   }
-  .form__container__title__name {
+  .block__wrapper__form__container__title__name {
     font-size: 14px;
   }
-  .form__container__division__tag {
+  .block__wrapper__form__container__division__tag {
     padding: 0 36px;
   }
-  .form__container__division__tag__placeholder {
+  .block__wrapper__form__container__division__tag__placeholder {
     font-size: 14px;
     color: #323232;
     width: 700px;
@@ -204,17 +201,17 @@
     border: 1px solid #e1e1e1;
     background-color: #fafafa;
   }
-  .subdivision__title {
+  .block__wrapper__subdivision__title {
     padding: 16px 0px 6px 36px;
   }
-  .subdivision__title__name {
+  .block__wrapper__subdivision__title__name {
     font-size: 14px;
     color: #afafaf;
   }
-  .subdivision__container__form {
+  .block__wrapper__subdivision__container__form {
     padding: 0 36px;
   }
-  .subdivision__container__form__placeholder {
+  .block__wrapper__subdivision__container__form__placeholder {
     background-color: #fafafa;
     border: 1px solid #e1e1e1;
     color: #323232;
@@ -266,29 +263,40 @@
     margin: 0 auto;
     border: 1px solid #e1e1e1;
   }
-  .thumbnail__title {
+  .block {
+    display: flex;
+    flex-direction: row;
+  }
+  .block__thumbnail__title {
     padding: 36px 100px;
   }
-  .thumbnail__title__name {
+  .block__thumbnail__title__name {
     font-size: 16px;
   }
-  .thumbnail__container {
+  .block__thumbnail__container {
     padding: 0 36px 10px 100px;
   }
-  .thumbnail__container__image {
+  .block__thumbnail__container__image {
     border-radius: 4px;
     -o-object-fit: cover;
        object-fit: cover;
     height: 195px;
-    width: 365px;
+    width: 375px;
   }
-  .form__container__title {
-    padding: 16px 0 10px 16px;
+  .block__wrapper {
+    padding: 21px 0px 0px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
-  .form__container__title__name {
+  .block__wrapper__form__container__title {
+    color: #afafaf;
+    padding: 16px 0 10px 0px;
+  }
+  .block__wrapper__form__container__title__name {
     font-size: 14px;
   }
-  .form__container__division__tag__placeholder {
+  .block__wrapper__form__container__division__tag__placeholder {
     background-color: #fafafa;
     border: 1px solid #e1e1e1;
     border-radius: 4px;
@@ -297,11 +305,12 @@
     width: 600px;
     height: 40px;
   }
-  .subdivision__title__name {
+  .block__wrapper__subdivision__title__name {
+    padding-bottom: 10px;
     font-size: 14px;
     color: #afafaf;
   }
-  .subdivision__container__form__placeholder {
+  .block__wrapper__subdivision__container__form__placeholder {
     background-color: #fafafa;
     border: 1px solid #e1e1e1;
     color: #323232;
