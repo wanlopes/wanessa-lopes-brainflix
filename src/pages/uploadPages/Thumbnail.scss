@@ -4,33 +4,66 @@
   margin: 0;
   padding: 0;
 }
-
-.thumbnail {
+.upload {
   &__title {
-    &__name {
-      color: $silver;
-    }
+    color: $brainflix-black;
+    font-family: $primary-normal;
   }
 }
-.form {
-    &__continer {
-        &__title { 
-            &__name {
-                color: $brainflix-black;
-            }
-        }
-    }
-}
-//MOBILE
-@media (max-width: $mobile-screen-min-size) {
-  .thumbnail {
+.block {
+  &__thumbnail {
     &__title {
-      padding: $headline-padding-after-mobile;
       &__name {
-        font-size: $page-header-text-size-mobile;
+        color: $silver;
+      }
+    }
+    &__container {
+      &__image {
+        border-radius: 4px;
       }
     }
   }
+  &__wrapper {
+    &__form {
+      &__container {
+        &__title {
+          &__name {
+            color: $silver;
+          }
+        }
+      }
+      &__division {
+        &__tag {
+          &__placeholder {
+            color: $brainflix-black;
+            border: 1px solid $mercury;
+            border-radius: 4px;
+            background-color: $alabaster;
+          }
+        }
+      }
+    }
+    &__subdivision {
+      &__title {
+        &__name {
+          color: $silver;
+        }
+      }
+      &__container {
+        &__form {
+          &__placeholder {
+            background-color: $alabaster;
+            border: 1px solid $mercury;
+            color: $brainflix-black;
+          }
+        }
+      }
+    }
+  }
+}
+
+//MOBILE
+@media (max-width: $mobile-screen-min-size) {
 }
 
 //TABLET

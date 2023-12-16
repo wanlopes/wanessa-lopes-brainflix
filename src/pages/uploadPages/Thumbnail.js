@@ -1,7 +1,7 @@
 import React from "react";
 import thumbnailimage from "../../assets/Images/Upload-video-preview.jpg";
 import "./Thumbnail.css";
-import upload from "../../assets/Icons/upload.svg"
+import publish from "../../assets/Icons/publish.svg"
 
 function Thumbnail({ handleFormSubmission }) {
   return (
@@ -65,7 +65,7 @@ function Thumbnail({ handleFormSubmission }) {
           <button className="buttons__first__content" type="submit">
             <div className="buttons__first__content__wrap">
               <div className="buttons__first__content__wrap__icon">
-                <img src={upload} alt="icon" />
+                <img src={publish} alt="icon" />
               </div>
               <div className="buttons__first__content__wrap__publish">
                 PUBLISH
