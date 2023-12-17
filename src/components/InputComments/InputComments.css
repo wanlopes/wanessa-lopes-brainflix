@@ -60,6 +60,20 @@
   border: none;
 }
 
+.main__section__elements__cont__form__input {
+  border: 1px solid #e1e1e1;
+}
+
+/* Active state */
+.main__section__elements__cont__form__input.active {
+  border: 2px solid #0095FF;
+}
+
+/* Error state */
+.main__section__elements__cont__form__input.error {
+  border: 1px solid #d22d2d;
+}
+
 @media (max-width: 320px) {
   .main__section__elements {
     flex-direction: column;

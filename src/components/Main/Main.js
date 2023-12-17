@@ -1,5 +1,5 @@
-import Gallery from "./Gallery";
-import MainVideo from "./MainVideo";
+import Gallery from "../../components/Gallery/Gallery";
+import MainVideo from "../../components/MainVideo/MainVideo";
 import { useEffect, useState } from "react";
 import axios from "axios";
 

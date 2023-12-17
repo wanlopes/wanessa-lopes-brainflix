@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import likes from "../assets/Icons/likes.svg";
-import views from "../assets/Icons/views.svg";
-import InputComments from "./InputComments";
-import addcomment from "../assets/Icons/add_comment.svg";
-import avatar from "../assets/Images/Mohan-muruge.jpg";
+import likes from "../../assets/Icons/likes.svg";
+import views from "../../assets/Icons/views.svg";
+import InputComments from "../../components/InputComments/InputComments";
+import addcomment from "../../assets/Icons/add_comment.svg";
+import avatar from "../../assets/Images/Mohan-muruge.jpg";
 import axios from "axios";
 // import InputComments from "./InputComments";
 

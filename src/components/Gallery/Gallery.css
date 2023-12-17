@@ -64,4 +64,11 @@
   .gallery__section__headline__title {
     font-size: 14px;
   }
+  aside {
+    margin-top: -692px;
+    border-left: 0.0625 solid #e1e1e1;
+    shape-outside: content-box;
+    width: 35%;
+    float: right;
+  }
 }/*# sourceMappingURL=Gallery.css.map */

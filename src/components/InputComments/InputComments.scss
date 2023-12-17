@@ -52,7 +52,19 @@
     }
   }
 }
+.main__section__elements__cont__form__input {
+  border: 1px solid $mercury;
+}
 
+/* Active state */
+.main__section__elements__cont__form__input.active {
+  border: 2px solid $brainflix-blue;
+}
+
+/* Error state */
+.main__section__elements__cont__form__input.error {
+  border: 1px solid #d22d2d;
+}
 //MOBILE
 @media (max-width: $mobile-screen-min-size) {
     .main__section__elements {

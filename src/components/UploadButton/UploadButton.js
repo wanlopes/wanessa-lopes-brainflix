@@ -1,6 +1,6 @@
-import VideoUploadPage from "../pages/uploadPages/VideoUploadPage";
+import VideoUploadPage from "../../pages/uploadPages/VideoUploadPage";
 import { Link } from "react-router-dom";
-import upload from "../assets/Icons/upload.svg";
+import upload from "../../assets/Icons/upload.svg";
 
 function UploadButton() {
   return (

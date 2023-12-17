@@ -13,6 +13,7 @@
   &__thumbnail {
     &__title {
       &__name {
+        font-family: $primary-normal;
         color: $silver;
       }
     }
@@ -211,7 +212,7 @@
         padding: $headline-padding-before-mobile $headline-padding-after-desktop
           10px $headline-padding-after-desktop;
         &__name {
-          font-size: $headline-padding-after-mobile;
+          font-size: $body-text-size-desktop;
         }
       }
       &__container {
@@ -230,13 +231,15 @@
           &__title {
             padding: $headline-padding-after-mobile 0 6px 36px;
             &__name {
-              font-size: $subheader-text-size-desktop;
+              font-family: $primary-normal;
+              font-size: $body-text-size-desktop;
             }
           }
           &__division {
             &__tag {
               padding: 0 36px;
               &__placeholder {
+                font-family: $primary-normal;
                 font-size: $body-text-size-desktop;
                 color: $brainflix-black;
                 width: 700px;
@@ -253,6 +256,7 @@
         &__title {
           padding: $headline-padding-after-mobile 0px 6px 36px;
           &__name {
+            font-family: $primary-normal;
             font-size: $subheader-text-size-desktop;
             color: $silver;
           }
@@ -261,6 +265,7 @@
           &__form {
             padding: 0 36px;
             &__placeholder {
+              font-family: $primary-normal;
               background-color: $alabaster;
               border: 1px solid $mercury;
               color: $brainflix-black;

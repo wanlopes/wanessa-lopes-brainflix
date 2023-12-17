@@ -1,4 +1,4 @@
-import addcomment from "../assets/Icons/add_comment.svg";
+import addcomment from "../../assets/Icons/add_comment.svg";
 
 function CommentButton () {
     return (

@@ -1,11 +1,10 @@
-import VideoSumary from "./VideoSumary";
+import VideoSumary from "../../components/VideoSumary/VideoSumary";
 // import videosData from "../Data/videos.json";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 function Gallery({ setFirstVideo, firstVideo }) {
-  // const videos = videosData;
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Header from "../src/components/Header/Header";
+import Main from "../src/components/Main/Main";
 import VideoUploadPage from "../src/pages/uploadPages/VideoUploadPage";
 import VideoDetailsPage from "../src/pages/uploadPages/VideoDetailsPage";
 

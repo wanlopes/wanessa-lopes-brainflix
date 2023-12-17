@@ -1,4 +1,4 @@
-@use "../styles/partials/global" as *;
+@use "../../styles/partials/global" as *;
 
 * {
   margin: 0;
@@ -157,6 +157,9 @@
 
 //Desktop
 @media (min-width: 1280px) and (max-width: $desktop-screen-max-size) {
+    .nav__header__logo {
+        padding: 1.875rem 8.125rem;
+    }
     .nav__header__ctn {
     padding-right: 5.625rem;
     padding-left: 11.875rem;

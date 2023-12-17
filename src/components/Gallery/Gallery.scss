@@ -1,4 +1,4 @@
-@use "../styles/partials/global" as *;
+@use "../../styles/partials/global" as *;
 
 * {
   margin: 0;
@@ -56,5 +56,12 @@
   }
   .gallery__section__headline__title {
     font-size: $body-text-size-desktop;
+  }
+  aside {
+    margin-top: -692px;
+    border-left: 0.0625 solid $mercury;
+    shape-outside: content-box;
+    width: 35%;
+    float: right;
   }
 }

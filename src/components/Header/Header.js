@@ -1,7 +1,7 @@
-import logo from "../assets/Logo/BrainFlix-logo.svg";
-import avatar from "../assets/Images/Mohan-muruge.jpg";
-import UploadButton from "../components/UploadButton";
-import InputSearch from "./InputSearch";
+import logo from "../../assets/Logo/BrainFlix-logo.svg";
+import avatar from "../../assets/Images/Mohan-muruge.jpg";
+import UploadButton from "../UploadButton/UploadButton";
+import InputSearch from "../InputSearch/InputSearch";
 import { Link } from "react-router-dom";
 
 function Header() {
