@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url("/src/assets/Font/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/Font/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: flex;
+}
+.gallery__section__headline {
+  color: #afafaf;
+  display: flex;
+}
+.gallery__section__headline__title {
+  font-family: "Avenir Next";
+  color: #afafaf;
+}
+
+@media (max-width: 320px) {
+  .gallery__header__title {
+    padding: 24px 16px;
+  }
+  .gallery__section__headline {
+    padding: 16px 0 0 16px;
+  }
+  .gallery__section__headline__title {
+    color: #afafaf;
+    font-family: "Avenir Next";
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .gallery__section__headline {
+    padding: 16px 24px;
+    font-size: 12px;
+  }
+  .gallery__section__headline__title {
+    font-size: 13px;
+  }
+  .gallery__section__playlist {
+    padding: 0 24px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .gallery__section__headline {
+    padding: 16px 24px 0 24px;
+  }
+  .gallery__section__headline__title {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=Gallery.css.map */

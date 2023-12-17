@@ -1,0 +1,241 @@
+@use "../styles/partials/global" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+    &__section {
+        &__div {
+            &__title {
+                font-family: $primary-normal;
+                color: $silver;
+            }
+        }
+    &__elements {
+      display: flex;
+      &__cont {
+        display: flex;
+        &__form {
+          &__input {
+            color: $brainflix-black;
+            outline: none;
+            border: 0.0625rem solid $mercury;
+            &:focus {
+              border: 0.0625rem solid $brainflix-blue;
+            }
+          }
+        }
+      }
+      &__btn {
+        display: flex;
+        &__comment {
+          border: none;
+          background-color: $brainflix-blue;
+          border-radius: 0.25rem;
+          &:hover {
+            background-color: $brainflix-darkblue;
+          }
+          &__pack {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &__text {
+              font-family: $primary-bold;
+              color: $white;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//MOBILE
+@media (max-width: $mobile-screen-min-size) {
+    .main__section__elements {
+    flex-direction: column;
+  }
+  .main__section__elements__btn__comment__pack__icon {
+    padding: 0rem 2.5rem 0rem 0.9375rem;
+  }
+  .main__section__elements__cont {
+    justify-content: space-evenly;
+  }
+  .main__section__elements__cont__form__input {
+    padding: 0.625rem 3.75rem 4.25rem 0.625rem;
+    background-color: $alabaster;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid $mercury;
+    font-family: $primary-normal;
+    color: $brainflix-black;
+  }
+
+  .main__section__elements__cont__form__text {
+    padding: 0.625rem 3.75rem 4.25rem 0.625rem;
+    background-color: $alabaster;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid $mercury;
+    font-family: $primary-normal;
+    color: $brainflix-black;
+  }
+  .main__section__div__title {
+    font-size: 0.875rem;
+    padding: 1rem 1rem 0.375rem 5.25rem;
+  }
+  .main__section__elements__cont__avatar__image {
+    height: $headline-padding-after-desktop;
+    width: $headline-padding-after-desktop;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .main__section__elements__btn {
+    padding-left: 50px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: $headline-padding-after-mobile;
+    padding-bottom: $headline-padding-after-mobile;
+  }
+  .main__section__elements__btn__comment {
+    padding-right: 5rem;
+    height: 2.5rem;
+    width: 13.75rem;
+  }
+
+  .main__section__elements__btn__comment__pack {
+    height: 2.5rem;
+  }
+  .main__section__line {
+    border-bottom: 0.0625rem solid $mercury;
+    margin: 0 auto;
+    width: 89%;
+  }
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: $tablet-screen-max-size) {
+    .main__section__elements__cont__form__input {
+        border-radius: 4px;
+        font-family: $primary-normal;
+        color: $brainflix-black;
+        font-size: $section-header-text-size-desktop;
+        padding: 12px 322px 12px 10px;
+    }
+    .main__section__div {
+        padding: 1rem 1rem 0.3125rem 5.625rem;
+    }
+    .main__section__div__title {
+        font-size: $section-header-text-size-mobile;
+    }
+    .main__section__line {
+        width: 93%;
+        margin: 0 auto;
+        padding: 1rem 0px;
+        border-bottom: 0.0625rem solid $mercury;
+    }
+    .main__section__elements {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .main__section__elements__cont__avatar__image {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .main__section__elements__cont__form {
+        padding-left: 16px;
+    }
+    .main__section__elements__cont__form__text {
+        padding: 10px 250px 10px 10px;
+        font-size: $body-text-size-desktop;
+        color: $brainflix-black;
+        border: 1px solid $mercury;
+        border-radius: 4px;
+    }
+    .main__section__elements__btn__comment {
+        font-size: $section-header-text-size-mobile;
+        height: 2.5rem;
+        width: 9.375rem;
+    }
+    .main__section__elements__btn__comment__pack {
+        width: 9.375rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .main__section__elements__btn__comment__pack__icon {
+        padding: 0rem 20px 0rem 10px;
+    }
+}
+
+//Desktop
+@media (min-width: 1280px) and (max-width: $desktop-screen-max-size) {
+    .main__section__elements__cont__form__input {
+        border-radius: 4px;
+        padding: 1px 65px 1px 10px;
+        font-family: $primary-normal;
+        color: $brainflix-black;
+        font-size: 0.75rem;
+        width: 14.375rem;
+        height: 2.375rem;
+    }
+     .main__section__elements__btn__comment__pack__icon {
+        padding: 0px 20px 0px 10px;
+    }
+     .main__section {
+    width: 68%;
+  }
+  .main__section__line {
+    width: 80%;
+    margin: 0 auto;
+    padding: $headline-padding-after-mobile 0px;
+    border-bottom: 1px solid $mercury;
+  }
+  .main__section__div {
+    padding: 0.25rem 0px 0.25rem 11.5625rem;
+  }
+  .main__section__div__title {
+    font-size: $label-buton-text-size-desktop;
+  }
+  .main__section__elements {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main__section__elements__cont {
+    // padding-left: 4.125rem;
+  }
+  .main__section__elements__cont__form {
+    padding-left: $headline-padding-before-mobile;
+  }
+  .main__section__elements__btn {
+    padding-left: 0.3125rem;
+  }
+  .main__section__elements__btn__comment {
+    font-size: $label-buton-text-size-desktop;
+    height: 40px;
+    width: 9.6875rem;
+  }
+  .main__section__elements__btn__comment__pack__text {
+    padding-left: $body-text-size-desktop;
+  }
+  .main__section__elements__cont__avatar__image {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .main__section__elements__cont__form__text {
+    padding: 10px 180px 14px 10px;
+    font-size: $primary-normal;
+    color: $brainflix-black;
+    background-color: $alabaster;
+    border-radius: 4px;
+    border: 0.0625rem solid $mercury;
+  }
+}

@@ -1,4 +1,50 @@
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url("/src/assets/Font/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/Font/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.upload__title {
+  color: #323232;
+  font-family: "Avenir Next";
+}
+
+.block__thumbnail__title__name {
+  color: #afafaf;
+}
+.block__thumbnail__container__image {
+  border-radius: 4px;
+}
+.block__wrapper__form__container__title__name {
+  color: #afafaf;
+}
+.block__wrapper__form__division__tag__placeholder {
+  color: #323232;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+.block__wrapper__subdivision__title__name {
+  color: #afafaf;
+}
+.block__wrapper__subdivision__container__form__placeholder {
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  color: #323232;
 }/*# sourceMappingURL=Thumbnail.css.map */

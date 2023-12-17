@@ -5,7 +5,6 @@ import './Thumbnail.css';
 
 
 function UploadSection({ handleFormSubmission }) {
-  console.log("aqui");
   return (
     <div>
         <div className="upper-line"></div>

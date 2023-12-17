@@ -378,6 +378,15 @@
   .main__section__elements__cont {
     justify-content: space-evenly;
   }
+  .main__section__elements__cont__form__input {
+    padding: 0.625rem 3.75rem 4.25rem 0.625rem;
+    background-color: $alabaster;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid $mercury;
+    font-family: $primary-normal;
+    color: $brainflix-black;
+  }
+
   .main__section__elements__cont__form__text {
     padding: 0.625rem 3.75rem 4.25rem 0.625rem;
     background-color: $alabaster;
@@ -397,7 +406,7 @@
     object-fit: cover;
   }
   .main__section__elements__btn {
-    margin: 0 auto;
+    padding-left: 50px;
     flex-direction: row;
     justify-content: center;
     padding-top: $headline-padding-after-mobile;
@@ -566,11 +575,11 @@
     padding: 1.625rem 2.125rem;
   }
   .main__section__elements__cont__form__input {
+    border-radius: 4px;
     font-family: $primary-normal;
     color: $brainflix-black;
     font-size: $section-header-text-size-desktop;
-    padding: 0.625rem $headline-padding-after-mobile;
-    width: 11.875;
+    padding: 12px 322px 12px 10px;
   }
   .nav__header__ctn__upload__btn {
     font-size: $section-header-text-size-mobile;
@@ -608,7 +617,7 @@
   }
   .main__section__elements {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .main__section__elements__cont__avatar__image {
     width: 2.5rem;
@@ -663,6 +672,7 @@
     border-bottom: 1px solid $mercury;
   }
   .main__video__details__div__length {
+    font-family: $primary-bold;
     font-size: $body-text-size-desktop;
     padding: 16px 0;
   }
@@ -764,6 +774,8 @@
     padding: 1.875rem 8.125rem;
   }
   .main__section__elements__cont__form__input {
+    border-radius: 4px;
+    padding: 1px 65px 1px 10px;
     font-family: $primary-normal;
     color: $brainflix-black;
     font-size: 0.75rem;
@@ -845,6 +857,7 @@
     padding-right: $headline-padding-after-desktop;
   }
   .main__video__details__div__length {
+    font-family: $primary-bold;
     padding: $headline-padding-after-mobile 0;
   }
   .main__video__comments {
@@ -894,10 +907,10 @@
   }
   .main__section__elements {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .main__section__elements__cont {
-    padding-left: 4.125rem;
+    // padding-left: 4.125rem;
   }
   .main__section__elements__cont__form {
     padding-left: $headline-padding-before-mobile;

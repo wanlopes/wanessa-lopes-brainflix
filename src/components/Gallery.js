@@ -15,7 +15,6 @@ function Gallery({ setFirstVideo, firstVideo }) {
       )
       .then((response) => {
         setVideos(response.data);
-        console.log("papai noel");
       })
       .catch((error) => {
         console.error("Error fetching videos: ", error);

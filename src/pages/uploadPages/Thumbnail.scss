@@ -1,9 +1,10 @@
-@use "styles/partials/global" as *;
+@use "../../styles/partials/global" as *;
 
 * {
   margin: 0;
   padding: 0;
 }
+
 .upload {
   &__title {
     color: $brainflix-black;

@@ -1,0 +1,101 @@
+@use "../styles/partials/global" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+    &__section {
+        &__elements {
+            &__btn {
+                &__comment {
+                    &__icon {
+
+                    }
+                    &__text {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: $mobile-screen-min-size) {
+    .main__section__elements {
+        flex-direction: column;
+    }
+    .main__section__elements__btn__comment__pack__icon {
+        padding: 0rem 2.5rem 0rem 0.9375rem;
+    }
+        .main__section__elements__btn {
+    padding-left: 50px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: $headline-padding-after-mobile;
+    padding-bottom: $headline-padding-after-mobile;
+  }
+  .main__section__elements__btn__comment {
+    padding-right: 5rem;
+    height: 2.5rem;
+    width: 13.75rem;
+  }
+
+  .main__section__elements__btn__comment__pack {
+    height: 2.5rem;
+  }
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: $tablet-screen-max-size) {
+    .main__section__elements__btn__comment {
+    font-size: $section-header-text-size-mobile;
+    height: 2.5rem;
+    width: 9.375rem;
+  }
+  .main__section__elements__btn__comment__pack {
+    width: 9.375rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .main__section__elements__btn__comment__pack__icon {
+    padding: 0rem 20px 0rem 10px;
+  }
+}
+
+//Desktop
+@media (min-width: 1280px) and (max-width: $desktop-screen-max-size) {
+     .main__section__elements__btn {
+    padding-left: 0.3125rem;
+  }
+  .main__section__elements__btn__comment {
+    font-size: $label-buton-text-size-desktop;
+    height: 40px;
+    width: 9.6875rem;
+  }
+  .main__section__elements__btn__comment__pack__text {
+    padding-left: $body-text-size-desktop;
+  }
+  .main__section__elements__cont__avatar__image {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .main__section__elements__cont__form__text {
+    padding: 10px 180px 14px 10px;
+    font-size: $primary-normal;
+    color: $brainflix-black;
+    background-color: $alabaster;
+    border-radius: 4px;
+    border: 0.0625rem solid $mercury;
+  }
+  .main__section__elements__btn__comment__pack__icon {
+    padding: 0px 20px 0px 10px;
+  }
+}

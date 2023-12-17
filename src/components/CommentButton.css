@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url("/src/assets/Font/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/Font/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 320px) {
+  .main__section__elements {
+    flex-direction: column;
+  }
+  .main__section__elements__btn__comment__pack__icon {
+    padding: 0rem 2.5rem 0rem 0.9375rem;
+  }
+  .main__section__elements__btn {
+    padding-left: 50px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .main__section__elements__btn__comment {
+    padding-right: 5rem;
+    height: 2.5rem;
+    width: 13.75rem;
+  }
+  .main__section__elements__btn__comment__pack {
+    height: 2.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .main__section__elements__btn__comment {
+    font-size: 12px;
+    height: 2.5rem;
+    width: 9.375rem;
+  }
+  .main__section__elements__btn__comment__pack {
+    width: 9.375rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .main__section__elements__btn__comment__pack__icon {
+    padding: 0rem 20px 0rem 10px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .main__section__elements__btn {
+    padding-left: 0.3125rem;
+  }
+  .main__section__elements__btn__comment {
+    font-size: 12px;
+    height: 40px;
+    width: 9.6875rem;
+  }
+  .main__section__elements__btn__comment__pack__text {
+    padding-left: 14px;
+  }
+  .main__section__elements__cont__avatar__image {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .main__section__elements__cont__form__text {
+    padding: 10px 180px 14px 10px;
+    font-size: "Avenir Next";
+    color: #323232;
+    background-color: #fafafa;
+    border-radius: 4px;
+    border: 0.0625rem solid #e1e1e1;
+  }
+  .main__section__elements__btn__comment__pack__icon {
+    padding: 0px 20px 0px 10px;
+  }
+}/*# sourceMappingURL=CommentButton.css.map */
