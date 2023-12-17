@@ -1,7 +1,7 @@
 import React from "react";
 import thumbnailimage from "../../assets/Images/Upload-video-preview.jpg";
 import "./Thumbnail.css";
-import publish from "../../assets/Icons/publish.svg"
+import publish from "../../assets/Icons/publish.svg";
 
 function Thumbnail({ handleFormSubmission }) {
   return (
@@ -54,27 +54,27 @@ function Thumbnail({ handleFormSubmission }) {
                   type="text"
                   placeholder="Add a description to your video"
                 ></input>
+                <div className="bottom-line"></div>
+                <div className="buttons">
+                  <div className="buttons__first">
+                    <button className="buttons__first__content" type="submit">
+                      <div className="buttons__first__content__wrap">
+                        <div className="buttons__first__content__wrap__icon">
+                          <img src={publish} alt="icon" />
+                        </div>
+                        <div className="buttons__first__content__wrap__publish">
+                          PUBLISH
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div className="buttons__second">
+                    <button className="buttons__second__name">CANCEL</button>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="bottom-line"></div>
-      <div className="buttons">
-        <div className="buttons__first">
-          <button className="buttons__first__content" type="submit">
-            <div className="buttons__first__content__wrap">
-              <div className="buttons__first__content__wrap__icon">
-                <img src={publish} alt="icon" />
-              </div>
-              <div className="buttons__first__content__wrap__publish">
-                PUBLISH
-              </div>
-            </div>
-          </button>
-        </div>
-        <div className="buttons__second">
-          <button className="buttons__second__name">CANCEL</button>
         </div>
       </div>
     </div>

@@ -1,24 +1,26 @@
 import React from "react";
 // import Header from "./Header";
 import UploadSection from "./UploadSection";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function VideoUploadPage() {
   const [uploadSuccess, setUploadSuccess] = useState(false);
+  const navigate = useNavigate();
 
   const handleFormSubmission = (event) => {
     event.preventDefault();
-    setUploadSuccess(true);
+    alert("Upload done");
+    navigate("/");
   };
 
   return (
     <>
       <section>
-        {!uploadSuccess ? (
-          <UploadSection handleFormSubmission={handleFormSubmission} />
+        {uploadSuccess ? (
+          <h1>AAAAAAAAAAAAAAAAA</h1>
         ) : (
-          <Link to="/" />
+          <UploadSection handleFormSubmission={handleFormSubmission} />
         )}
       </section>
     </>

@@ -1,0 +1,107 @@
+@use "../styles/partials/global" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  &__header {
+    width: 100%;
+    display: flex;
+    &__logo {
+      display: flex;
+    }
+    &__ctn {
+      width: 100%;
+      display: flex;
+      &__elements {
+        display: flex;
+        flex-direction: row;
+        &__input {
+          background-color: $alabaster;
+          padding-left: 0.625rem;
+          display: flex;
+          align-items: center;
+          border: 0.0625rem solid $mercury;
+          border-radius: 0.25rem;
+          &__field {
+            background-color: $alabaster;
+            border: none;
+          }
+        }
+        &__avatar {
+          display: flex;
+        }
+      }
+      &__upload {
+        &__btn {
+          background-color: $brainflix-blue;
+          border-radius: 0.25rem;
+          font-family: $primary-bold;
+          color: $white;
+          border: none;
+          &:hover {
+            background-color: $brainflix-darkblue;
+          }
+          &__content {
+            padding-left: 0.625rem;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            &__text {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//Mobile
+@media (max-width: $mobile-screen-min-size) {
+    .nav__header__ctn__elements {
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav__header__ctn__elements__input {
+        border: 0.5px solid $mercury;
+        border-radius: 0.25rem;
+        height: 2.25rem;
+        border-radius: 0.25rem;
+    }
+   
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: $tablet-screen-max-size) {
+    .nav__header__ctn {
+        padding-right: $headline-padding-after-mobile;
+        padding-left: 4.0625rem;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+//Desktop
+@media (min-width: 1280px) and (max-width: $desktop-screen-max-size) {
+    .nav__header__ctn {
+        padding-right: 5.625rem;
+        padding-left: 11.875rem;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .nav__header__ctn__elements {
+        align-items: center;
+    }
+}

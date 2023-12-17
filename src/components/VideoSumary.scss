@@ -1,0 +1,119 @@
+@use "../styles/partials/global" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sumary {
+  display: flex;
+  &__wrap {
+    display: flex;
+  }
+  &__elements {
+    display: flex;
+    &__id {
+      display: none;
+    }
+    &__title {
+      display: flex;
+      font-family: $primary-bold;
+      color: $brainflix-black;
+    }
+    &__channel {
+      display: flex;
+      font-family: $primary-normal;
+      color: $brainflix-black;
+    }
+  }
+}
+
+//MOBILE
+@media (max-width: $mobile-screen-min-size) {
+    .sumary {
+    display: flex;
+    padding: $headline-padding-after-mobile;
+    &__wrap {
+      display: flex;
+      &__image {
+        object-fit: cover;
+        border-radius: 0.25rem;
+        width: 6.25rem;
+        height: 3.75rem;
+      }
+    }
+    &__elements {
+      padding-left: $headline-padding-after-mobile;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &__id {
+        display: none;
+      }
+      &__title {
+        font-size: $body-text-size-mobile;
+        display: flex;
+        font-family: $primary-normal;
+      }
+      &__channel {
+        font-size: $body-text-size-mobile;
+        display: flex;
+        font-family: $primary-normal;
+      }
+    }
+  }
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: $tablet-screen-max-size) {
+    .sumary {
+    padding: $subheader-text-size-mobile 0;
+  }
+  .sumary__wrap__image {
+    object-fit: cover;
+    width: 6.875rem;
+    height: 4.0625rem;
+    border-radius: 0.25rem;
+  }
+  .sumary__elements {
+    justify-content: space-around;
+    width: 35%;
+    padding: 0 $headline-padding-after-mobile;
+    flex-direction: column;
+  }
+  .sumary__elements__title {
+    font-family: $primary-normal;
+    // padding-bottom: 15px;
+    font-size: $subheader-text-size-desktop;
+  }
+  .sumary__elements__channel {
+    padding-top: 0.9375rem;
+    font-size: $subheader-text-size-desktop;
+  }
+}
+
+//Desktop
+@media (min-width: 1280px) and (max-width: $desktop-screen-max-size) {
+    .sumary__wrap {
+    padding: $headline-padding-after-mobile $headline-padding-before-mobile;
+  }
+  .sumary__wrap__image {
+    object-fit: cover;
+    width: 8.125rem;
+    height: 5rem;
+    border-radius: 0.25rem;
+  }
+  .sumary__elements {
+    width: 35%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .sumary__elements__title {
+    font-size: $body-text-size-desktop;
+    font-family: $primary-bold;
+  }
+  .sumary__elements__channel {
+    font-size: $body-text-size-desktop;
+    font-family: $primary-normal;
+  }
+}

@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url("/src/assets/Font/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/src/assets/Font/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sumary {
+  display: flex;
+}
+.sumary__wrap {
+  display: flex;
+}
+.sumary__elements {
+  display: flex;
+}
+.sumary__elements__id {
+  display: none;
+}
+.sumary__elements__title {
+  display: flex;
+  font-family: "Avenir Next Bold";
+  color: #323232;
+}
+.sumary__elements__channel {
+  display: flex;
+  font-family: "Avenir Next";
+  color: #323232;
+}
+
+@media (max-width: 320px) {
+  .sumary {
+    display: flex;
+    padding: 16px;
+  }
+  .sumary__wrap {
+    display: flex;
+  }
+  .sumary__wrap__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0.25rem;
+    width: 6.25rem;
+    height: 3.75rem;
+  }
+  .sumary__elements {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sumary__elements__id {
+    display: none;
+  }
+  .sumary__elements__title {
+    font-size: 13px;
+    display: flex;
+    font-family: "Avenir Next";
+  }
+  .sumary__elements__channel {
+    font-size: 13px;
+    display: flex;
+    font-family: "Avenir Next";
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .sumary {
+    padding: 13px 0;
+  }
+  .sumary__wrap__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 6.875rem;
+    height: 4.0625rem;
+    border-radius: 0.25rem;
+  }
+  .sumary__elements {
+    justify-content: space-around;
+    width: 35%;
+    padding: 0 16px;
+    flex-direction: column;
+  }
+  .sumary__elements__title {
+    font-family: "Avenir Next";
+    font-size: 14px;
+  }
+  .sumary__elements__channel {
+    padding-top: 0.9375rem;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .sumary__wrap {
+    padding: 16px 24px;
+  }
+  .sumary__wrap__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 8.125rem;
+    height: 5rem;
+    border-radius: 0.25rem;
+  }
+  .sumary__elements {
+    width: 35%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .sumary__elements__title {
+    font-size: 14px;
+    font-family: "Avenir Next Bold";
+  }
+  .sumary__elements__channel {
+    font-size: 14px;
+    font-family: "Avenir Next";
+  }
+}/*# sourceMappingURL=VideoSumary.css.map */
