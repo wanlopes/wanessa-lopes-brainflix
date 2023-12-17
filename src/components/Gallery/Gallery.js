@@ -3,6 +3,8 @@ import VideoSumary from "../../components/VideoSumary/VideoSumary";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "./Gallery.css";
+
 
 function Gallery({ setFirstVideo, firstVideo }) {
   const [videos, setVideos] = useState([]);

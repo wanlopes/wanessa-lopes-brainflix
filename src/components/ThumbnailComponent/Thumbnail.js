@@ -1,7 +1,7 @@
 import React from "react";
 import thumbnailimage from "../../assets/Images/Upload-video-preview.jpg";
-import "./Thumbnail.css";
 import publish from "../../assets/Icons/publish.svg";
+import "./Thumbnail.css";
 
 function Thumbnail({ handleFormSubmission }) {
   return (

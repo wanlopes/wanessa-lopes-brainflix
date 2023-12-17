@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import addcomment from "../../assets/Icons/add_comment.svg";
 import avatar from "../../assets/Images/Mohan-muruge.jpg";
+import "./InputComments.css";
 
 function InputComments() {
   const [inputState, setInputState] = useState({

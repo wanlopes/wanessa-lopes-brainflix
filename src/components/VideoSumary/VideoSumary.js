@@ -1,3 +1,4 @@
+import "./VideoSumary.css";
 
 function VideoSumary(props) {
   return (

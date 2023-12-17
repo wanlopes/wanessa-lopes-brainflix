@@ -265,6 +265,7 @@
     width: 100%;
   }
   .main__video__headline {
+    width: 50%;
     padding: 24px 8.125rem;
   }
   .main__video__channel {

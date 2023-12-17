@@ -1,7 +1,6 @@
 import React from "react";
-import Thumbnail from "./Thumbnail";
+import Thumbnail from "../ThumbnailComponent/Thumbnail";
 import "./UploadSection.css";
-import "./Thumbnail.css";
 
 function UploadSection({ handleFormSubmission }) {
   return (

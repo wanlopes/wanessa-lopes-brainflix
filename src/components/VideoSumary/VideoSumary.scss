@@ -30,7 +30,7 @@
 
 //MOBILE
 @media (max-width: $mobile-screen-min-size) {
-    .sumary {
+  .sumary {
     display: flex;
     padding: $headline-padding-after-mobile;
     &__wrap {
@@ -66,7 +66,7 @@
 
 //Tablet
 @media (min-width: 768px) and (max-width: $tablet-screen-max-size) {
-    .sumary {
+  .sumary {
     padding: $subheader-text-size-mobile 0;
   }
   .sumary__wrap__image {
@@ -94,7 +94,7 @@
 
 //Desktop
 @media (min-width: 1280px) and (max-width: $desktop-screen-max-size) {
-    .sumary__wrap {
+  .sumary__wrap {
     padding: $headline-padding-after-mobile $headline-padding-before-mobile;
   }
   .sumary__wrap__image {

@@ -1,4 +1,5 @@
 import addcomment from "../../assets/Icons/add_comment.svg";
+import "./CommentButton.css";
 
 function CommentButton () {
     return (

@@ -1,5 +1,6 @@
 import React from "react";
 import search from "../../assets/Icons/search.svg";
+import "./InputSearch.css";
 
 function InputSearch () {
     return (

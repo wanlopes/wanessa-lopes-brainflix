@@ -1,11 +1,11 @@
-import VideoUploadPage from "../../pages/uploadPages/VideoUploadPage";
+// import VideoUploadPage from "../../pages/uploadPages/VideoUploadPage";
 import { Link } from "react-router-dom";
 import upload from "../../assets/Icons/upload.svg";
+import "./UploadButton.css";
 
 function UploadButton() {
   return (
     <div className="nav__header__ctn__upload">
-      {/* <Link to="../pages/uploadPages/VideoUploadPage.js"> */}
       <Link to="/upload">
         <button className="nav__header__ctn__upload__btn">
           <div className="nav__header__ctn__upload__btn__content">

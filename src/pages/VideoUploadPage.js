@@ -1,5 +1,5 @@
 import React from "react";
-import UploadSection from "./UploadSection";
+import UploadSection from "../../src/components/UploadSectionComponent/UploadSection";
 import { useNavigate } from "react-router-dom";
 
 function VideoUploadPage() {

@@ -5,7 +5,8 @@ import InputComments from "../../components/InputComments/InputComments";
 import addcomment from "../../assets/Icons/add_comment.svg";
 import avatar from "../../assets/Images/Mohan-muruge.jpg";
 import axios from "axios";
-// import InputComments from "./InputComments";
+import "./MainVideo.css";
+
 
 const convertTimeStampToDate = (timestamp) => {
   let date = new Date(timestamp);
