@@ -5,9 +5,6 @@ import "./InputSearch.css";
 function InputSearch () {
     return (
       <>
-        {/* <div className="nav__header__ctn__elements__icon">
-          <img src={search} alt="search"></img>
-        </div> */}
         <div className="nav__header__ctn__elements__input">
           <img src={search} alt="search" />
           <input

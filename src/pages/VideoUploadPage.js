@@ -12,11 +12,9 @@ function VideoUploadPage() {
   };
 
   return (
-    <>
       <section>
         <UploadSection handleFormSubmission={handleFormSubmission} />
       </section>
-    </>
   );
 }
 

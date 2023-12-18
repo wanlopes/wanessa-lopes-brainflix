@@ -1,4 +1,3 @@
-// import VideoUploadPage from "../../pages/uploadPages/VideoUploadPage";
 import { Link } from "react-router-dom";
 import upload from "../../assets/Icons/upload.svg";
 import "./UploadButton.css";
