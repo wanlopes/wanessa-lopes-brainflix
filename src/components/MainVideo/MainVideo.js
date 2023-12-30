@@ -4,6 +4,7 @@ import views from "../../assets/Icons/views.svg";
 import InputComments from "../../components/InputComments/InputComments";
 import axios from "axios";
 import "./MainVideo.css";
+import { useParams } from "react-router-dom";
 
 const convertTimeStampToDate = (timestamp) => {
   let date = new Date(timestamp);
@@ -12,11 +13,16 @@ const convertTimeStampToDate = (timestamp) => {
 
 function MainVideo({ setFirstVideo, props }) {
   const [videoDetails, setVideoDetails] = useState(null);
+  const { id } = useParams();
+  console.log({ id });
 
   useEffect(() => {
     axios
       .get(
-        `https://project-2-api.herokuapp.com/videos/${props.id}?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f`
+        // `https://project-2-api.herokuapp.com/videos/${props.id}?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f`
+        `https://project-2-api.herokuapp.com/videos/${
+          id ?? props.id
+        }?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f`
       )
       .then((response) => {
         setVideoDetails(response.data);
@@ -24,7 +30,8 @@ function MainVideo({ setFirstVideo, props }) {
       .catch((error) => {
         return "Error";
       });
-  }, [props.id]);
+    // }, [props.id]);
+  }, [id]);
 
   if (videoDetails == null) {
     <h1>LOADING</h1>;

@@ -2,10 +2,13 @@ import VideoSumary from "../VideoSumary/VideoSumary";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./Gallery.css";
-
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function Gallery({ setFirstVideo, firstVideo }) {
   const [videos, setVideos] = useState([]);
+  const { id } = useParams();
+  console.log("aqui:", id);
   useEffect(() => {
     axios
       .get(
@@ -27,9 +30,19 @@ function Gallery({ setFirstVideo, firstVideo }) {
         </div>
         <div className="gallery__section__playlist">
           {videos
-            .filter((video) => video.id !== firstVideo.id)
+            // .filter((video) => video.id !== firstVideo.id)
+            .filter((video) => video.id !== id)
             .map((video) => (
-              <a onClick={() => setFirstVideo(video)}>
+              // <a onClick={() => setFirstVideo(video)}>
+              //   <VideoSumary
+              //     key={video.id}
+              //     id={video.id}
+              //     title={video.title}
+              //     channel={video.channel}
+              //     image={video.image}
+              //   />
+              // </a>
+              <Link to={`/videos/${video.id}`} key={video.id}>
                 <VideoSumary
                   key={video.id}
                   id={video.id}
@@ -37,7 +50,7 @@ function Gallery({ setFirstVideo, firstVideo }) {
                   channel={video.channel}
                   image={video.image}
                 />
-              </a>
+              </Link>
             ))}
         </div>
       </section>

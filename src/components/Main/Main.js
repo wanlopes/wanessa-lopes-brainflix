@@ -2,7 +2,7 @@ import Gallery from "../../components/Gallery/Gallery";
 import MainVideo from "../../components/MainVideo/MainVideo";
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import { Routes, Route } from "react-router-dom";
 
 function Main() {
   const defaultVideo = { id: "84e96018-4022-434e-80bf-000ce4cd12b8" };
@@ -22,6 +22,7 @@ function Main() {
   return (
     <section className="main">
       <MainVideo props={firstVideo} setFirstVideo={setFirstVideo} />
+        {/* <Route path="/videos/:id" element={<MainVideo />} /> */}
       <Gallery
         setFirstVideo={setFirstVideo}
         firstVideo={firstVideo}
