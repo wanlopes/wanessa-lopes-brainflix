@@ -2,6 +2,7 @@ import Gallery from "../../components/Gallery/Gallery";
 import MainVideo from "../../components/MainVideo/MainVideo";
 import { useEffect, useState } from "react";
 import axios from "axios";
+// const baseURL = process.env.REACT_APP_BASE_URL; 
 
 
 function Main() {
@@ -10,7 +11,7 @@ function Main() {
   useEffect(() => {
     axios
       .get(
-        "https://project-2-api.herokuapp.com/videos?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
+        "http://localhost:3001/videos?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
       )
       .then((response) => {
         setFirstVideo(response.data[0]);
