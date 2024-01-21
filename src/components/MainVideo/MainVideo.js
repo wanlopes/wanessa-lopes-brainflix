@@ -15,9 +15,7 @@ function MainVideo({ setFirstVideo, props }) {
 
   useEffect(() => {
     axios
-      .get(
-        `http://localhost:3001/videos/${props.id}?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f`
-      )
+      .get(`http://localhost:3001/videos/${props.id}`)
       .then((response) => {
         setVideoDetails(response.data);
       })
@@ -88,7 +86,8 @@ function MainVideo({ setFirstVideo, props }) {
             </p>
           </div>
         </div>
-        <InputComments />
+        <InputComments videoId={videoDetails.id} />
+
         {videoDetails.comments.map((comment) => (
           <div key={comment.id} className="main__video__comments">
             <div className="main__video__comments__div">

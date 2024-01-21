@@ -28,6 +28,7 @@ function Thumbnail() {
         description: formData.description,
         name: "Name.User",
         image: "http://localhost:3001/images/ibLw5q5.jpg",
+        comments: [],
       })
       .then((response) => {
         if (response.status === 201) {
