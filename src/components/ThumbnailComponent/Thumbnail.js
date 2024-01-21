@@ -4,7 +4,7 @@ import publish from "../../assets/Icons/publish.svg";
 import "./Thumbnail.css";
 import axios from "axios";
 
-function Thumbnail({ handleFormSubmission }) {
+function Thumbnail() {
   // const [ newVideo, setNewVideo ] = useState(null);
   const [formData, setFormData] = useState({
     title: "",
@@ -20,22 +20,18 @@ function Thumbnail({ handleFormSubmission }) {
   };
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
     console.info("Calling HandleSubmit");
     axios
       .post("http://localhost:3001/videos", {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "POST",
-        },
         title: formData.title,
-        channel: formData.channel,
+        channel: "Channel.User",
         description: formData.description,
+        name: "Name.User",
         image: "http://localhost:3001/images/ibLw5q5.jpg",
       })
       .then((response) => {
         if (response.status === 201) {
-          console.log("Video uploades successfully");
+          console.log("Video uploaded successfully");
         } else {
           console.log(response);
           console.log("Video upload failed");
