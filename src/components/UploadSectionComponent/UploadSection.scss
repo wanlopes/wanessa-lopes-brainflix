@@ -93,67 +93,67 @@
   .block {
     &__thumbnail {
       &__title {
-        padding: $headline-padding-after-mobile $headline-padding-after-mobile 6px
-        $headline-padding-after-mobile;
-      &__name {
-        font-size: $subheader-text-size-desktop;
-      }
-    }
-    &__container {
-      &__image {
-        border-radius: 4px;
-        object-fit: cover;
-        width: 290px;
-        padding: 0 $headline-padding-after-mobile;
-      }
-    }
-  }
-  &__wrapper {
-    &__form {
-    &__container {
-      padding: $headline-padding-after-mobile;
-      &__title {
-        padding: 6px 0;
+        padding: $headline-padding-after-mobile $headline-padding-after-mobile
+          6px $headline-padding-after-mobile;
         &__name {
           font-size: $subheader-text-size-desktop;
         }
       }
-      &__division {
-        &__tag {
-          &__placeholder {
-            padding: 0 10px;
-            width: 270px;
-            height: 40px;
-            border: 1px solid $mercury;
-            background-color: $alabaster;
+      &__container {
+        &__image {
+          border-radius: 4px;
+          object-fit: cover;
+          width: 290px;
+          padding: 0 $headline-padding-after-mobile;
+        }
+      }
+    }
+    &__wrapper {
+      &__form {
+        &__container {
+          padding: $headline-padding-after-mobile;
+          &__title {
+            padding: 6px 0;
+            &__name {
+              font-size: $subheader-text-size-desktop;
+            }
+          }
+          &__division {
+            &__tag {
+              &__placeholder {
+                padding: 0 10px;
+                width: 270px;
+                height: 40px;
+                border: 1px solid $mercury;
+                background-color: $alabaster;
+              }
+            }
+          }
+        }
+      }
+      &__subdivision {
+        padding: 0 $headline-padding-after-mobile;
+        &__title {
+          padding: 6px 0;
+          &__name {
+            font-size: $body-text-size-mobile;
+          }
+        }
+        &__container {
+          &__form {
+            &__placeholder {
+              padding: 0px 10px;
+              font-size: $body-text-size-mobile;
+              color: $brainflix-black;
+              height: 90px;
+              width: 270px;
+              border: 1px solid $mercury;
+              background-color: $alabaster;
+            }
           }
         }
       }
     }
-  }
-  &__subdivision {
-    padding: 0 $headline-padding-after-mobile;
-    &__title {
-      padding: 6px 0;
-      &__name {
-        font-size: $body-text-size-mobile;
-      }
-    }
-    &__container {
-      &__form {
-        &__placeholder {
-          padding: 0px 10px;
-          font-size: $body-text-size-mobile;
-          color: $brainflix-black;
-          height: 90px;
-          width: 270px;
-          border: 1px solid $mercury;
-          background-color: $alabaster;
-        }
-      }
-    }
-  }
-  }
   }
 }
 .buttons {
@@ -347,13 +347,14 @@
       }
     }
     &__wrapper {
-      padding: 25px 0px 0px $headline-padding-before-mobile;
+      padding: 80px 0px 0px $headline-padding-before-mobile;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       &__form {
         &__container {
           &__title {
+            font-family: $primary-normal;
             color: $silver;
             padding: $headline-padding-after-mobile 0 10px 0px;
             &__name {
@@ -378,6 +379,7 @@
       &__subdivision {
         &__title {
           &__name {
+            font-family: $primary-normal;
             padding-bottom: 10px;
             font-size: $subheader-text-size-desktop;
             color: $silver;
