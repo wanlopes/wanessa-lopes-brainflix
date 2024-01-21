@@ -9,7 +9,7 @@ function Gallery({ setFirstVideo, firstVideo }) {
   useEffect(() => {
     axios
       .get(
-        "https://project-2-api.herokuapp.com/videos?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
+        "http://localhost:3001/videos?api_key=c7e27a6d-5f33-4cbc-b007-1c1288b3cb3f"
       )
       .then((response) => {
         setVideos(response.data);

@@ -1,9 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import thumbnailimage from "../../assets/Images/Upload-video-preview.jpg";
 import publish from "../../assets/Icons/publish.svg";
 import "./Thumbnail.css";
+import axios from "axios";
 
 function Thumbnail({ handleFormSubmission }) {
+  // const [ newVideo, setNewVideo ] = useState(null);
+  const [formData, setFormData] = useState({
+    title: "",
+    description: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    // e.preventDefault();
+    console.info("Calling HandleSubmit");
+    axios
+      .post("http://localhost:3001/videos", {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "POST",
+        },
+        title: formData.title,
+        channel: formData.channel,
+        description: formData.description,
+        image: "http://localhost:3001/images/ibLw5q5.jpg",
+      })
+      .then((response) => {
+        if (response.status === 201) {
+          console.log("Video uploades successfully");
+        } else {
+          console.log(response);
+          console.log("Video upload failed");
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching videos: ", error);
+      });
+  };
+
   return (
     <div>
       <div className="block">
@@ -20,39 +62,45 @@ function Thumbnail({ handleFormSubmission }) {
           </div>
         </div>
         <div className="block__wrapper">
-          <div className="block__wrapper__form">
-            <div className="block__wrapper__form__container">
-              <div className="block__wrapper__form__container__title">
-                <h2 className="block__wrapper__form__container__title__name">
-                  TITLE YOUR VIDEO
-                </h2>
-              </div>
-              <div className="block__wrapper__form__container__division">
-                <form className="block__wrapper__form__container__division__tag">
+          <form
+            className="block__wrapper__form__container__division__tag"
+            onSubmit={handleSubmit}
+          >
+            <div className="block__wrapper__form">
+              <div className="block__wrapper__form__container">
+                <div className="block__wrapper__form__container__title">
+                  <h2 className="block__wrapper__form__container__title__name">
+                    TITLE YOUR VIDEO
+                  </h2>
+                </div>
+                <div className="block__wrapper__form__container__division">
                   <input
                     className="block__wrapper__form__container__division__tag__placeholder"
                     type="text"
+                    name="title"
                     placeholder="Add a title to your video"
+                    value={formData.title}
+                    onChange={handleInputChange}
+                    required
                   ></input>
-                </form>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="block__wrapper__subdivision">
-            <div className="block__wrapper__subdivision__title">
-              <h2 className="block__wrapper__subdivision__title__name">
-                ADD A VIDEO DESCRIPTION
-              </h2>
-            </div>
-            <div className="block__wrapper__subdivision__container">
-              <form
-                className="block__wrapper__subdivision__container__form"
-                onSubmit={handleFormSubmission}
-              >
+            <div className="block__wrapper__subdivision">
+              <div className="block__wrapper__subdivision__title">
+                <h2 className="block__wrapper__subdivision__title__name">
+                  ADD A VIDEO DESCRIPTION
+                </h2>
+              </div>
+              <div className="block__wrapper__subdivision__container">
                 <input
                   className="block__wrapper__subdivision__container__form__placeholder"
                   type="text"
+                  name="description"
+                  value={formData.description}
+                  onChange={handleInputChange}
                   placeholder="Add a description to your video"
+                  required
                 ></input>
                 <div className="bottom-line"></div>
                 <div className="buttons">
@@ -72,9 +120,9 @@ function Thumbnail({ handleFormSubmission }) {
                     <button className="buttons__second__name">CANCEL</button>
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

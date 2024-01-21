@@ -45,6 +45,7 @@
           border: none;
           &:hover {
             background-color: $brainflix-darkblue;
+            cursor: pointer;
           }
           &__content {
             padding-left: 0.625rem;

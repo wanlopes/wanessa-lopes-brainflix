@@ -36,6 +36,7 @@
           border-radius: 0.25rem;
           &:hover {
             background-color: $brainflix-darkblue;
+            cursor: pointer;
           }
           &__pack {
             display: flex;
@@ -217,9 +218,6 @@
   .main__section__elements {
     flex-direction: row;
     justify-content: space-evenly;
-  }
-  .main__section__elements__cont {
-    // padding-left: 4.125rem;
   }
   .main__section__elements__cont__form {
     padding-left: $headline-padding-before-mobile;
