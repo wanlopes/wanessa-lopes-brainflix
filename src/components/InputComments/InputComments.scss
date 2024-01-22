@@ -1,4 +1,4 @@
-@use "../styles/partials/global" as *;
+@use "../../styles/partials/global" as *;
 
 * {
   margin: 0;
@@ -6,13 +6,13 @@
 }
 
 .main {
-    &__section {
-        &__div {
-            &__title {
-                font-family: $primary-normal;
-                color: $silver;
-            }
-        }
+  &__section {
+    &__div {
+      &__title {
+        font-family: $primary-normal;
+        color: $silver;
+      }
+    }
     &__elements {
       display: flex;
       &__cont {
@@ -36,6 +36,7 @@
           border-radius: 0.25rem;
           &:hover {
             background-color: $brainflix-darkblue;
+            cursor: pointer;
           }
           &__pack {
             display: flex;
@@ -67,7 +68,7 @@
 }
 //MOBILE
 @media (max-width: $mobile-screen-min-size) {
-    .main__section__elements {
+  .main__section__elements {
     flex-direction: column;
   }
   .main__section__elements__btn__comment__pack__icon {
@@ -128,78 +129,78 @@
 
 //Tablet
 @media (min-width: 768px) and (max-width: $tablet-screen-max-size) {
-    .main__section__elements__cont__form__input {
-        border-radius: 4px;
-        font-family: $primary-normal;
-        color: $brainflix-black;
-        font-size: $section-header-text-size-desktop;
-        padding: 12px 322px 12px 10px;
-    }
-    .main__section__div {
-        padding: 1rem 1rem 0.3125rem 5.625rem;
-    }
-    .main__section__div__title {
-        font-size: $section-header-text-size-mobile;
-    }
-    .main__section__line {
-        width: 93%;
-        margin: 0 auto;
-        padding: 1rem 0px;
-        border-bottom: 0.0625rem solid $mercury;
-    }
-    .main__section__elements {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .main__section__elements__cont__avatar__image {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-    .main__section__elements__cont__form {
-        padding-left: 16px;
-    }
-    .main__section__elements__cont__form__text {
-        padding: 10px 250px 10px 10px;
-        font-size: $body-text-size-desktop;
-        color: $brainflix-black;
-        border: 1px solid $mercury;
-        border-radius: 4px;
-    }
-    .main__section__elements__btn__comment {
-        font-size: $section-header-text-size-mobile;
-        height: 2.5rem;
-        width: 9.375rem;
-    }
-    .main__section__elements__btn__comment__pack {
-        width: 9.375rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    .main__section__elements__btn__comment__pack__icon {
-        padding: 0rem 20px 0rem 10px;
-    }
+  .main__section__elements__cont__form__input {
+    border-radius: 4px;
+    font-family: $primary-normal;
+    color: $brainflix-black;
+    font-size: $section-header-text-size-desktop;
+    padding: 12px 322px 12px 10px;
+  }
+  .main__section__div {
+    padding: 1rem 1rem 0.3125rem 5.625rem;
+  }
+  .main__section__div__title {
+    font-size: $section-header-text-size-mobile;
+  }
+  .main__section__line {
+    width: 93%;
+    margin: 0 auto;
+    padding: 1rem 0px;
+    border-bottom: 0.0625rem solid $mercury;
+  }
+  .main__section__elements {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main__section__elements__cont__avatar__image {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .main__section__elements__cont__form {
+    padding-left: 16px;
+  }
+  .main__section__elements__cont__form__text {
+    padding: 10px 250px 10px 10px;
+    font-size: $body-text-size-desktop;
+    color: $brainflix-black;
+    border: 1px solid $mercury;
+    border-radius: 4px;
+  }
+  .main__section__elements__btn__comment {
+    font-size: $section-header-text-size-mobile;
+    height: 2.5rem;
+    width: 9.375rem;
+  }
+  .main__section__elements__btn__comment__pack {
+    width: 9.375rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .main__section__elements__btn__comment__pack__icon {
+    padding: 0rem 20px 0rem 10px;
+  }
 }
 
 //Desktop
 @media (min-width: 1280px) and (max-width: $desktop-screen-max-size) {
-    .main__section__elements__cont__form__input {
-        border-radius: 4px;
-        padding: 1px 65px 1px 10px;
-        font-family: $primary-normal;
-        color: $brainflix-black;
-        font-size: 0.75rem;
-        width: 14.375rem;
-        height: 2.375rem;
-    }
-     .main__section__elements__btn__comment__pack__icon {
-        padding: 0px 20px 0px 10px;
-    }
-     .main__section {
+  .main__section__elements__cont__form__input {
+    border-radius: 4px;
+    padding: 1px 65px 1px 10px;
+    font-family: $primary-normal;
+    color: $brainflix-black;
+    font-size: 0.75rem;
+    width: 14.375rem;
+    height: 2.375rem;
+  }
+  .main__section__elements__btn__comment__pack__icon {
+    padding: 0px 20px 0px 10px;
+  }
+  .main__section {
     width: 68%;
   }
   .main__section__line {
@@ -217,9 +218,6 @@
   .main__section__elements {
     flex-direction: row;
     justify-content: space-evenly;
-  }
-  .main__section__elements__cont {
-    // padding-left: 4.125rem;
   }
   .main__section__elements__cont__form {
     padding-left: $headline-padding-before-mobile;
