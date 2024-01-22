@@ -5,7 +5,6 @@ import "./Thumbnail.css";
 import axios from "axios";
 
 function Thumbnail() {
-  // const [ newVideo, setNewVideo ] = useState(null);
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -20,7 +19,6 @@ function Thumbnail() {
   };
 
   const handleSubmit = async (e) => {
-    console.info("Calling HandleSubmit");
     axios
       .post("http://localhost:3001/videos", {
         title: formData.title,
@@ -29,14 +27,6 @@ function Thumbnail() {
         name: "Name.User",
         image: "http://localhost:3001/images/ibLw5q5.jpg",
         comments: [],
-      })
-      .then((response) => {
-        if (response.status === 201) {
-          console.log("Video uploaded successfully");
-        } else {
-          console.log(response);
-          console.log("Video upload failed");
-        }
       })
       .catch((error) => {
         console.error("Error fetching videos: ", error);

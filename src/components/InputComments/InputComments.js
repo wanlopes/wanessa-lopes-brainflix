@@ -39,20 +39,9 @@ function InputComments({ videoId }) {
         name: "Name.User",
         comment: formData.comment,
       })
-      .then((response) => {
-        if (response.status === 201) {
-          console.log("Video uploades successfully");
-          navigate(`/videos/videoId=${videoId}`);
-        } else {
-          console.log(response);
-          console.log("Video upload failed");
-        }
-      })
       .catch((error) => {
         console.error("Error creating comment: ", error);
       });
-
-    //
   };
 
   return (
